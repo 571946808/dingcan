@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方惠圆订餐系统</title>
+    <!--#include file="/pages/admin/common/head.html"-->
+</head>
+<body>
+    <!--#include file="/pages/admin/common/header.html"-->
+    <div class="page clearfix">
+        <!--#include file="/pages/admin/common/sidebar.html"-->
+        <div class="holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                            <li><a href="#">基本信息管理</a></li>
+                            <li class="active">用户信息管理</li>
+                        </ol>
+                        <h2>用户信息管理-用户信息列表</h2>                        
+                        <div class="alert alert-danger J_tip" role="alert">提示信息!</div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>搜索</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal J_searchForm" action="" method="">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">用户类型</label>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox block">
+                                                <label>
+                                                    <input class="J_selectAllType" type="checkbox" value="1" name="type"> 全部
+                                                </label>
+                                                <label>
+                                                    <input class="J_userType" type="checkbox" value="11" name="type"> 后台管理员
+                                                </label>
+                                                <label>
+                                                    <!--该input刷便利店类型-->
+                                                    <input class="J_userType J_controlShowStore" type="checkbox" value="12" name="type"> 便利店
+                                                </label>
+                                                <label>
+                                                    <input class="J_userType" type="checkbox" value="13" name="type"> 顾客
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--用户类型为便利店时show所属店面复选框-->
+                                    <div class="form-group hidden J_storeGroup">
+                                        <label class="col-sm-3 control-label">所属店面</label>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox block J_chooseStoreGroups">
+                                                <label>
+                                                    <input class="J_selectAllStore" type="checkbox" value="1" name="store"> 全部
+                                                </label>
+                                                <label>
+                                                    <input class="J_chooseStore" type="checkbox" value="11" name="store"> 店面1
+                                                </label>
+                                                <label>
+                                                    <input class="J_chooseStore" type="checkbox" value="12" name="store"> 店面2
+                                                </label>
+                                                <label>
+                                                    <input class="J_chooseStore" type="checkbox" value="13" name="store"> 店面3
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-4">
+                                        <div class="btn-toolbar">
+                                            <button class="btn-primary btn J_search" type="submit"><i class="fa fa-search"></i>&nbsp;搜索</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>用户信息列表</h4>
+                            </div>
+                            <div class="panel-body">
+                                <a class="btn btn-success margin-bottom-15" href="#"><i class="fa fa-plus"></i> 添加用户</a>
+                                <form class="J_operForm">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>用户类型</th>
+                                                <th>用户名</th>
+                                                <th>所属店面</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="J_template">
+                                            </tbody>
+                                        </table>
+                                        <div class="J_pagination"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="/pages/admin/common/footer.html"-->
+    <!--刷分页-->
+    <script type="text/template" id="tpl">
+        {@each list as it}
+            <tr data-user-id="&{it.id}">
+                <td>&{it.type}</td>
+                <td>&{it.username}</td>
+                <td>&{it.store}</td>
+                <td>
+                    {@if it.id != 1}
+                        <a class="label-info J_del" href="javascript:;"><i class="fa fa-times"></i> 删除</a>
+                    {@/if}
+                </td>
+            </tr>
+        {@/each}
+    </script>
+    <script type="text/javascript">
+        KISSY.ready(function (S) {
+            S.use('page/basic-information-management/user-information-list', function (S) {
+                PW.page.UserManagement.List({
+                    renderTo: '.J_pagination',
+                    juicerRender: '#tpl',
+                    dataRender: '#J_template',
+                    url: '/mock/admin/user-list.json',
+                    pageSize: 10,
+                    configUrl: function(url,page,me,prevPaginationData){
+                        return url;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

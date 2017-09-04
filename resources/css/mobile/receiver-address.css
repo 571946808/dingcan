@@ -1,0 +1,199 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  margin-top: 1.25333rem;
+  font-size: 0.45333rem; }
+
+/*--------------------------receiver-address-add--------------------------------*/
+.add-detail {
+  font-size: 0.48rem;
+  background: #fff;
+  margin-top: 1.46667rem; }
+  .add-detail li {
+    border-bottom: 0.01333rem solid #E5E5E5;
+    line-height: 1.46667rem; }
+  .add-detail label {
+    padding-left: 0.50667rem;
+    width: 2rem;
+    display: inline-block; }
+  .add-detail input[type="radio"] {
+    margin-right: 0.16rem;
+    width: 0.46667rem;
+    height: 0.46667rem;
+    border-radius: 100%;
+    vertical-align: middle; }
+  .add-detail input[type="radio"]:checked {
+    background: #38a2fa; }
+  .add-detail .sir {
+    margin-left: 2.8rem; }
+  .add-detail .lady {
+    margin-left: 0.93333rem; }
+  .add-detail input {
+    border: 0rem;
+    padding: 0.13333rem; }
+  .add-detail i {
+    color: #38A2FA; }
+  .add-detail textarea {
+    vertical-align: top;
+    border: 0rem;
+    padding: 0.13333rem;
+    margin-top: 0.26667rem;
+    margin-bottom: 0.26667rem;
+    height: 1.6rem;
+    width: 68%; }
+
+.sex-choose label {
+  display: inline;
+  padding-left: 0; }
+
+.sex-choose input {
+  vertical-align: middle; }
+
+.error-field {
+  color: #B94A48;
+  margin-left: 0.26667rem;
+  margin-top: 0.26667rem;
+  padding-left: 0.13333rem; }
+
+.submit-add {
+  background-color: #38a2fa;
+  font-size: 0.53333rem;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding: 0.13333rem 4rem;
+  margin: 0.26667rem;
+  text-align: center; }
+
+.dustbin {
+  float: right;
+  position: relative;
+  top: -0.04rem;
+  padding-right: 0.26667rem;
+  font-weight: 100;
+  color: #999; }
+
+/*--------------------------receiver-address-modify--------------------------------*/
+.delete {
+  float: right;
+  padding-right: 0.26667rem;
+  padding-top: 0.2rem; }
+
+/*--------------------------receiver-address-list--------------------------------*/
+.address-list-container {
+  padding-bottom: 2.66667rem; }
+
+#wrapperer {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important; }
+
+.address-list {
+  padding: 0.26667rem 0.26667rem;
+  border-bottom: 0.02667rem solid #cecccd;
+  background: #fff; }
+  .address-list .person-info {
+    font-size: 0.32rem; }
+    .address-list .person-info .name {
+      font-size: 0.48rem;
+      font-weight: bold;
+      margin-right: 0.06667rem; }
+    .address-list .person-info .phone {
+      margin-left: 0.26667rem; }
+  .address-list .address-detail {
+    font-size: 0.32rem;
+    color: #595959;
+    margin-top: 0.13333rem; }
+
+.footer {
+  background: #fff;
+  color: #38A2FA;
+  border-top: 0.02667rem solid #cecccd;
+  padding-top: 0.50667rem;
+  padding-bottom: 0.50667rem;
+  font-size: 0.50667rem; }
+  .footer i {
+    margin: 0.10667rem; }
+
+/*--------------------------receiver-address-management--------------------------------*/
+.list-box span {
+  font-size: 0.37333rem; }
+
+.default {
+  color: #595959;
+  margin-top: 0.13333rem;
+  padding-right: 0.13333rem;
+  font-size: 0.4rem; }
+  .default div.set-default,
+  .default div.choosed-mark {
+    float: left; }
+  .default div.modify-address-link {
+    float: right; }
+  .default label {
+    margin-right: 0.66667rem;
+    vertical-align: middle; }
+  .default a {
+    color: #595959; }
+  .default .edit {
+    vertical-align: middle;
+    color: #38A2FA;
+    display: inline-block;
+    margin-right: 0.13333rem; }
+  .default input[type="checkbox"] {
+    margin-right: 0.06667rem;
+    width: 0.42667rem;
+    height: 0.42667rem;
+    vertical-align: middle;
+    border-radius: 0.06667rem; }
+  .default input[type="checkbox"]:checked {
+    background: #38A2FA; }
+  .default .check {
+    color: green;
+    font-weight: bold; }
+
+/*# sourceMappingURL=receiver-address.css.map */

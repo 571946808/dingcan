@@ -1,0 +1,104 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  font-size: 0.34667rem;
+  margin-top: 1.25333rem; }
+
+.margin-top-15 {
+  margin-top: 0.2rem; }
+
+.order-info {
+  background: #fff;
+  padding: 0.26667rem 0.26667rem 0; }
+  .order-info .info-item {
+    border-bottom: 0.01333rem solid #a9a8af;
+    padding: 0.26667rem 0; }
+  .order-info .order-id {
+    font-size: 0.4rem;
+    background: #38A2FA;
+    color: #fff;
+    padding-left: 0.13333rem;
+    padding-right: 0.13333rem;
+    margin-right: 0.26667rem; }
+  .order-info .phone {
+    float: right;
+    color: #38A2FA;
+    font-size: 0.48rem; }
+  .order-info .time {
+    color: #84838a; }
+  .order-info .status {
+    color: #ff8822; }
+  .order-info .dish-item {
+    margin-top: 0.06667rem;
+    color: #84838a; }
+  .order-info .dish-price {
+    float: right; }
+  .order-info .price {
+    border-bottom: none; }
+  .order-info .total-price {
+    color: #ff8822;
+    font-size: 0.48rem;
+    float: right; }
+
+.oper-list {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-size: 0.48rem; }
+  .oper-list button {
+    padding: 0.24rem 0.93333rem;
+    border: none; }
+  .oper-list .del-order {
+    background: #fff;
+    margin-right: 0.13333rem; }
+  .oper-list .confirm-order {
+    color: #fff;
+    background: #48c371; }
+
+/*# sourceMappingURL=order-detail.css.map */

@@ -1,0 +1,127 @@
+@import "./common/common-header";
+.container{
+    margin-top: (94rem / $param);
+    font-size: (26rem / $param);
+    // position: absolute;
+}
+.dish-list-title{
+    padding: (20rem / $param) 0 (20rem / $param) 0;
+    border-bottom: (1rem / $param) solid #a9a8af;
+}
+.order-dish-list ,.order-detail{
+    padding: 0 (20rem / $param) 0 (20rem/$param);
+    background: #fff;
+}
+.dish-list{
+    padding: (20rem / $param) 0 (20rem/$param) 0 ;
+    border-bottom: #D3D2D8 solid (1rem / $param);
+}
+.detail-store-name{
+    font-size: (30rem / $param);
+    padding: 0 (10rem / $param) 0 (15rem / $param);
+}
+.dish-list-title i{
+    color: dodgerblue;
+    margin-right: (10rem / $param);
+}
+.dish-list{
+    margin:(10rem / $param) (5rem / $param) (15rem / $param) (5rem / $param);
+}
+.dish-list li{
+    margin-bottom: (15rem / $param);
+}
+.dish-list li,
+.detail-info-list li{
+    color: #84838a;
+}
+
+.dish-info span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: (28rem / $param);
+}
+.dish-name{
+    width: 55%;
+}
+.dish-num,.dish-price{
+    //float: right;
+    text-align: right;
+}
+.dish-num{
+    width: 20%;
+}
+.dish-price{
+    width: 22%;
+}
+.total-price{
+    float: right;
+    color: red;
+    margin:  (10rem / $param) (10rem / $param) (10rem / $param) 0;
+}
+.order-detail{
+    margin-top: (20rem / $param);
+    padding-top: (20rem / $param);
+    padding-bottom: (20rem / $param);
+}
+.order-number{
+    display: inline-block;
+    float: right;
+    font-size: (24rem / $param);
+    line-height: (37rem / $param);
+}
+.order-title{
+    padding: (10rem / $param) 0 (15rem / $param) 0;
+    font-size: (28rem / $param);
+}
+.detail-info-title{
+    font-weight: bold;
+}
+.detail-info-list li{
+    padding: (15rem / $param) 0 (15rem / $param) 0;
+    border-top: (1rem / $param) solid #a9a8af;
+    font-size: (24rem / $param);
+}
+.order-comment{
+    margin-top: (20rem / $param);
+    padding: (20rem / $param) (20rem / $param);
+    background: #fff;
+}
+.comment-title{
+    font-size: (28rem / $param);
+    padding-bottom: (15rem / $param);
+    border-bottom: (1rem / $param) solid #a9a8af;
+}
+.comment-input{
+    width: 100%;
+    overflow: auto;
+    height: (180rem / $param);
+    margin-top: (10rem / $param);
+    font-size: (28rem / $param);
+    border: none;
+    outline:none;
+    resize: none;
+}
+.comment-context{
+    width: 100%;
+    margin-top: (10rem / $param);
+    font-size: (28rem / $param);
+    color: #84838a;
+}
+.restaurant{
+    background-color: #e4e7e7;
+    margin: (10rem / $param) (10rem / $param);
+    padding: (10rem / $param) (10rem / $param);
+}
+.comment-submit{
+    width: (700rem / $param);
+    background-color: #00DD77;
+    font-size:(40rem / $param);
+    color:#fff;
+    border: none;
+    border-radius:  (10rem / $param);
+    padding:(20rem / $param) 0;
+    margin:(25rem / $param);
+    text-align: center;
+    border-shadow: none;
+    margin-bottom: (40rem / $param);
+}

@@ -1,0 +1,122 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  font-size: 0.44rem; }
+
+/*--------------------------today-order start--------------------------------*/
+.delete {
+  padding-right: 0.26667rem;
+  float: right;
+  margin-top: 0.2rem; }
+
+.order {
+  width: 10rem;
+  height: 4.66667rem;
+  background-color: #fff;
+  margin-bottom: 0.26667rem;
+  margin-top: 0.26667rem;
+  padding-left: 0.26667rem;
+  border-bottom: 0.01333rem solid #c5c3c2; }
+
+.order-head {
+  height: 1.53333rem;
+  border-bottom: 0.01333rem solid #c5c3c2;
+  padding-top: 0.2rem; }
+
+.order-header {
+  padding-top: 0.13333rem; }
+
+.order-sequence {
+  width: 1.33333rem;
+  text-align: center;
+  display: inline-block;
+  background-color: #3399ff;
+  color: #fff; }
+
+.delivery-address {
+  margin-left: 0.26667rem;
+  width: 6rem;
+  display: inline-block;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 0.46667rem; }
+
+.order-status {
+  color: #808080; }
+
+.name {
+  margin-right: 0.26667rem;
+  color: #808080; }
+
+.phone {
+  color: #3399ff; }
+
+.order-body {
+  height: 1.73333rem;
+  padding-top: 0.13333rem;
+  border-bottom: 0.01333rem solid #c5c3c2;
+  color: #808080; }
+
+.order-time {
+  display: block;
+  margin-top: 0.13333rem; }
+
+.total-money {
+  line-height: 1.06667rem;
+  color: #000; }
+
+.money-number {
+  color: red; }
+
+/*--------------------------today-order end--------------------------------*/
+
+/*# sourceMappingURL=today-order.css.map */

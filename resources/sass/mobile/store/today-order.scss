@@ -1,0 +1,77 @@
+@import '../common/common-header';
+.container{
+	font-size: (33rem / $param);
+}
+/*--------------------------today-order start--------------------------------*/
+.delete{
+	padding-right: (20rem / $param);
+	float: right;
+	margin-top: (15rem / $param);
+}
+.order{
+	width: (750rem / $param);
+	height: (350rem / $param);
+	background-color: #fff;
+	margin-bottom: (20rem / $param);
+	margin-top: (20rem / $param);
+	padding-left: (20rem / $param);
+	border-bottom: (1rem / $param) solid #c5c3c2;
+}
+.order-head{
+	height: (115rem / $param);
+	border-bottom: (1rem / $param) solid #c5c3c2;
+	padding-top: (15rem / $param);
+}
+.order-header{
+	padding-top: (10rem / $param);
+}
+// input[type="checkbox"]{
+// 		width:  (30rem / $param);
+// 		height:  (30rem / $param);
+// 	}
+.order-sequence{
+	//padding: (0rem / $param) (10rem / $param);
+	width: (100rem / $param);
+	text-align: center;
+	display: inline-block;
+	background-color: #3399ff;
+	color: #fff;
+}
+.delivery-address{
+	margin-left: (20rem / $param);
+	width: (450rem / $param);
+	display: inline-block;
+	color: #000;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: (35rem / $param);
+}
+.order-status{
+	color: #808080;
+}
+.name{
+	margin-right: (20rem / $param);
+	color: #808080;
+}
+.phone{
+	color: #3399ff;
+}
+.order-body{
+	height: (130rem / $param);
+	padding-top: (10rem / $param);
+	border-bottom: (1rem / $param) solid #c5c3c2;
+	color: #808080;
+}
+.order-time{
+	display: block;
+	margin-top: (10rem / $param);
+}
+.total-money{
+	line-height: (80rem / $param);
+	color: #000;
+}
+.money-number{
+	color: red;
+}
+/*--------------------------today-order end--------------------------------*/

@@ -1,0 +1,178 @@
+@import "./common/common-header";
+.container{
+    margin-top: (94rem / $param);
+    font-size: (34rem / $param);
+}
+/*--------------------------receiver-address-add--------------------------------*/
+.add-detail{
+	font-size:(36rem / $param);
+	background: #fff;
+	margin-top: (110rem / $param);
+	li{
+		border-bottom:(1rem / $param) solid #E5E5E5;
+		line-height: (110rem / $param);
+	}
+	label{
+		padding-left:(38rem / $param);
+		width:(150rem / $param);
+		display:inline-block;
+	}
+	input[type="radio"]{
+		margin-right: (12rem / $param);
+		width:  (35rem / $param);
+		height:  (35rem / $param);
+		border-radius: 100%;
+		vertical-align: middle;
+	}
+	input[type="radio"]:checked{
+		background: #38a2fa;
+	}
+	.sir{
+		margin-left:  (210rem / $param);
+	}
+	.lady{
+		margin-left:  (70rem / $param);
+	}
+	input{
+		border: (0rem / $param);
+		padding:  (10rem / $param);
+	}
+	i{
+		color: #38A2FA;
+	}
+	textarea{
+		vertical-align: top;
+		border: (0rem / $param);
+		padding:  (10rem / $param);
+		margin-top: (20rem / $param);
+		margin-bottom: (20rem / $param);
+		height: (120rem / $param);
+		width: 68%;
+	}
+}
+.sex-choose label{
+	display: inline;
+	padding-left: 0;
+}
+.sex-choose input{
+	vertical-align: middle;
+}
+.error-field{
+	color: #B94A48;
+	margin-left: (20rem / $param);
+	margin-top: (20rem / $param);
+	padding-left:(10rem / $param);
+}
+.submit-add{
+	background-color: #38a2fa;
+	font-size:(40rem / $param);
+	color:#fff;
+	border-radius:	(10rem / $param);
+	padding:(10rem / $param) (300rem / $param);
+	margin:(20rem / $param);
+	text-align: center;
+}
+.dustbin{
+	float: right;
+	position:relative;
+	top:(-3rem / $param);
+	padding-right:(20rem / $param);
+	font-weight: 100;
+	color:#999;
+}
+/*--------------------------receiver-address-modify--------------------------------*/
+.delete{
+	float: right;
+	padding-right:(20rem / $param);
+	padding-top:(15rem / $param);
+
+}
+
+/*--------------------------receiver-address-list--------------------------------*/
+.address-list-container{
+	padding-bottom: (200rem / $param);
+}
+#wrapperer{
+	overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.address-list{
+	padding:(20rem / $param) (20rem / $param);
+	border-bottom:(2rem / $param) solid #cecccd;
+	background:#fff;
+	.person-info{
+		font-size: (24rem / $param);
+
+		.name{
+			font-size: (36rem / $param);
+			font-weight: bold;
+			margin-right: (5rem / $param);
+		}
+		.phone{
+			margin-left: (20rem / $param);
+		}
+	}
+	.address-detail{
+		font-size: (24rem / $param);
+		color: #595959;
+		margin-top: (10rem / $param);
+	}
+}
+.footer{
+	background:#fff;
+	color:#38A2FA;
+	border-top:(2rem / $param) solid #cecccd;
+	padding-top:(38rem / $param);
+	padding-bottom:(38rem / $param);
+	font-size:(38rem / $param);
+	i{
+	    margin: (8rem / $param);
+	}
+}
+
+/*--------------------------receiver-address-management--------------------------------*/
+.list-box span{
+	font-size: (28rem / $param);
+}
+.default{
+	color: #595959;
+	margin-top:(10rem / $param);
+	padding-right:(10rem / $param);
+	font-size: (30rem / $param);
+	div.set-default,
+	div.choosed-mark{
+		float: left;
+	}
+	div.modify-address-link{
+		float: right;
+	}
+	label{
+		margin-right: (50rem / $param);
+		vertical-align: middle;
+	}
+	a{
+		color: #595959;
+	}
+	.edit{
+		vertical-align: middle;
+		color: #38A2FA;
+		display: inline-block;
+		margin-right: (10rem / $param);
+	}
+	input[type="checkbox"]{
+		margin-right: (5rem / $param);
+		width:  (32rem / $param);
+		height:  (32rem / $param);
+		vertical-align: middle;
+		border-radius: (5rem / $param);
+	}
+	input[type = "checkbox"]:checked
+	{
+		background: #38A2FA;
+	}
+	.check{
+		color: green;
+		font-weight: bold;
+	}
+}

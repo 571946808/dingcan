@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改地址</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/receiver-address.css">
+</head>
+<body>
+	<div class="page" data-address-id="1">
+        <div class="header clearfix" id="header">
+            <a href="javascript:;" onclick="history.go(-1)"><i class="fa fa-chevron-left back-icon"></i></a>
+            <h1 class="header-title">修改地址 
+                <span href="javascript:;" class="delete J_del">
+                    <i class="fa fa-trash" ></i>
+                </span>
+            </h1>
+        </div>
+        <form class="container J_submitForm" >
+            <ul class="add-detail" >
+                <li >                                            
+                    <label>联系人</label>
+                    <input class="J_name" type="text" placeholder="您的姓名" value="张三" name="name" />
+                </li>
+                <li>
+                    <label></label>
+                    <input  type="radio" value="1" name="sex" checked/>先生
+                    <input class="lady" type="radio" value="2" name="sex"/>女士
+                </li>
+                <li>                                            
+                    <label>联系电话</label>
+                    <input class="J_phone" type="text" placeholder="您的手机号" value="15800000000" name="phone" "/>
+                </li>
+                 <li>                                            
+                    <label>收货地址</label>
+                    <textarea class="J_address" type="text" placeholder="请写详细地址（如门牌号等）"   name="address" rows="2">XXX大街XXXXX号XXX小区XXX栋XXXX301室</textarea>
+                </li>
+            </ul>
+            <p class="error-field J_error hidden">请输入联系人</p>
+            <button type="submit" class="submit-add  btn J_submitBtn" >确定</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/receiver-address-modify', function(S){
+                PW.page.ReceiverAddressModify();
+            });
+        });
+    </script>
+</body>
+</html>

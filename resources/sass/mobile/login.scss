@@ -1,0 +1,68 @@
+@import "common/common-header";
+.container{
+	width: (750rem / $param);
+    margin-top: (94rem / $param);
+    padding-top: (15rem / $param);
+    font-size: (36rem / $param);
+}
+.success-tip{
+	text-align: center;
+	color: #48c371;
+	padding-bottom: (15rem / $param);
+}
+.right{
+	float: right;
+	margin-right:(20rem / $param);
+}
+/*---------------------------user type start-----------------------------*/
+.radio-group{
+	height: (90rem / $param);
+	line-height: (90rem / $param);
+	padding: 0 (20rem / $param);
+	margin-bottom: (10rem / $param);
+	background-color: #fff;
+}
+.radio-item{
+	display: inline-block;
+	// width: (349rem / $param);
+	width: (340rem / $param);
+	text-align: center;
+}
+.active{
+	border-bottom: (10rem / $param) solid #38A2FA;
+}
+/*---------------------user type end---------------------------*/
+.input-group{
+	padding: 0 (30rem / $param);
+	border-top: (2rem / $param) solid #c5c3c2;
+	border-bottom: (2rem / $param) solid #c5c3c2;
+	background: #fff;
+}
+.user-info{
+	width:100%;
+	border: none;
+	padding: (20rem / $param) 0; 
+}
+.user-name{
+	border-bottom: (2rem / $param) solid #c5c3c2;
+}
+.login-btn{
+	width: (700rem / $param);
+	height: (100rem / $param);
+	line-height: (100rem / $param);
+	margin: (35rem / $param) (25rem / $param);
+	background: #38A2FA;
+	color: #fff;
+	border-radius: (10rem / $param);
+	border: none;
+}
+.register{
+	color: #38A2FA;
+	margin-left: (20rem / $param);
+	font-size: (32rem / $param);
+}
+.error-field{
+	color: #B94A48;
+	margin-left: (20rem / $param);
+	margin-top: (20rem / $param);
+}

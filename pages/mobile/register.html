@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册页</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/register.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <form class="container J_submitForm" action = "" method = "">
+            <ul class="register-detail">
+                <li>                                            
+                    <label>手机号</label>
+                    <input class="J_phone" type="text" placeholder="请输入手机号" value="" name="phone" />
+                    <input class="J_registerType"  type="hidden" name="registerType" register-type = '1' >
+                    <button type="button" class="send-phone J_sendBtn">发送</button>
+                </li>
+                <li>                                            
+                    <label>昵称</label>
+                    <input  type="text" placeholder="请输入昵称" value="" name="nickname" />
+                </li>
+                <li>                                            
+                    <label>密码</label>
+                    <input class="J_password"  type="password" placeholder="密码6-15位" value="" name="password" />
+                </li>
+                <li>                                            
+                    <label>确认密码</label>
+                    <input class="J_confirmPassword" type="password" placeholder="确认密码" value="" name="confirmPassword" />
+                </li>
+                <li>                                            
+                    <label>验证码</label>
+                    <input class="J_validCode" type="text" placeholder="请输入验证码" value="" name="validCode" />
+                </li>
+            </ul>
+            <p class="error-field J_error hidden">请输入联系人</p>
+            <button type="button" class="submit-add J_registerBtn" >注册</button>
+        </form>
+        
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/register', function(){
+                PW.page.Register();
+            })
+        })
+    </script>
+</body>
+</html>

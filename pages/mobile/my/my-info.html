@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户信息管理</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/my-info.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/main-common-header.html"-->
+        <div class="container">
+        	<span class="user-name">用户名：18844548876</span>
+        	<a href="#" class="my-info-list">
+        		<i class="fa fa-lock"></i>修改密码<i class="fa fa-angle-right"></i>
+        	</a>
+        	<a href="#" class="my-info-list">
+        		<i class="fa fa-map-marker"></i>收货地址<i class="fa fa-angle-right"></i>
+        	</a>
+            <a href="#" class="my-info-list">
+                <i class="fa fa-pencil"></i>修改昵称<i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#" class="my-info-list">
+                <i class="fa fa-tag"></i>我的留言<i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#" class="exit-login">退出登录</a>
+            <p class="success-tip J_msg">修改成功</p>
+            <p class="failure-tip J_msg">修改失败</p>
+        </div>
+        <!--#include file="/pages/mobile/common/footer.html"-->
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/message-add', function(){
+                PW.page.MessageAdd();
+            })
+        })
+    </script>
+</body>
+</html>

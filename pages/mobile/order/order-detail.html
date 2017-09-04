@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>订单详情</title>
+    <!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/order-detail.css">
+</head>
+<body>
+    <div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <input type="hidden" class="J_orderId" value="11231">
+            <div class="order-dish-list clearfix">
+                <p class="dish-list-title">
+                    <i class="fa fa-compass fa-spin"></i>
+                    <span class="detail-store-name">1号店</span>
+                </p>
+                <ul class="dish-list submit-order-list">
+                    <li class="dish-info clearfix">
+                        <span class="dish-name">米饭2两</span>
+                        <span class="dish-num">x 100</span>
+                        <span class="dish-price">￥ 100.00</span>
+                    </li>
+                    <li class="dish-info clearfix">
+                        <span class="dish-name">鲜肉饺子</span>
+                        <span class="dish-num">x 100</span>
+                        <span class="dish-price">￥ 100.00</span>
+                    </li>
+                    <li class="dish-info clearfix">
+
+                        <span class="dish-name">米饭2两米饭2两米饭2两米饭2两米饭2两</span>
+                        <span class="dish-num">x 100</span>
+                        <span class="dish-price">￥ 100.00</span>
+                    </li>
+                </ul>
+                <p class="total-price">合计 ￥29.00</p>
+            </div>
+            <div class="order-detail clearfix">
+                <p class="order-title"><span class="detail-info-title">订单详情</span><span class="order-number">订单号：56565656565566565</span></p>
+                <ul class="detail-info-list">
+                    <li>联系人: 周</li>
+                    <li>联系电话：13589678945</li>
+                    <li class="receive-address">收货地址: 东北师范大学高级公寓东北师范大学高级公寓</li>
+                    <li>下单时间：2016-08-30 10:23</li>
+                </ul>
+            </div>
+            <div class="order-comment">
+                <h3 class="comment-title">订单评价</h3>
+                <textarea type="textarea" class="comment-input J_commentInp" placeholder="菜品口味如何，服务如何？"></textarea>
+                <!-- <div class="comment-context">
+                    <p class="customer">这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容这里是显示评价的内容</p>
+                    <p class="restaurant">店家回复：这里是店家的回复这里是店家的回复这里是店家的回复这里是店家的回复这里是店家的回复这里是店家的回复</p>
+                </div> -->
+            </div>
+            <button class="comment-submit J_submitComment" type="button">提交评价</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            KISSY.use('page/order/order-detail', function(){
+                PW.page.Order.OrderDetail();
+            })
+        })
+    </script>
+</body>
+</html>

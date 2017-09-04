@@ -1,0 +1,140 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+/*************classify content start**************/
+.container {
+  margin-top: 1.25333rem; }
+
+.store-info {
+  padding: 0.13333rem 0.37333rem;
+  background-color: #fff;
+  color: #666666;
+  font-size: 0.37333rem;
+  border-top: 0.01333rem solid #c5c3c2;
+  border-bottom: 0.01333rem solid #c5c3c2; }
+
+.store-info .address {
+  float: left;
+  margin-right: 0.53333rem;
+  margin-bottom: 0.13333rem; }
+
+.store-info .phone {
+  float: left; }
+
+.dish-list {
+  margin-bottom: 1.6rem; }
+
+.dish-item {
+  padding: 0.26667rem 0.37333rem;
+  border-bottom: 0.01333rem solid #c5c3c2;
+  border-top: 0.01333rem solid #c5c3c2;
+  background-color: #fff; }
+
+.dish-item p {
+  display: inline-block;
+  font-size: 0.37333rem;
+  vertical-align: middle; }
+
+.classify-name {
+  padding: 0.13333rem 0.4rem;
+  font-size: 0.4rem; }
+
+.dish-name {
+  width: 4.92rem;
+  color: #666666;
+  overflow: hidden;
+  margin-right: 0.13333rem; }
+
+.dish-item i {
+  font-size: 0.24rem;
+  color: #bfbfbf;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.24rem; }
+
+.dish-item i.active {
+  color: #38A2FA; }
+
+.dish-price-sale {
+  width: 1.84rem;
+  color: #ff0000; }
+
+.dish-item .add-dish {
+  width: 1.62667rem;
+  background-color: #38A2FA;
+  padding-top: 0.10667rem;
+  padding-bottom: 0.10667rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.13333rem;
+  position: relative; }
+
+.add-dish .number-tip {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 0.4rem;
+  font-size: 0.29333rem;
+  border-radius: 0.2rem;
+  color: white;
+  position: absolute;
+  background-color: #ff4242;
+  text-align: center;
+  top: -0.09333rem;
+  right: -0.05333rem; }
+
+.hidden {
+  display: none; }
+
+.tip {
+  color: #38A2FA;
+  font-size: 0.48rem;
+  margin-top: 4rem;
+  text-align: center; }
+
+/*# sourceMappingURL=choose-dishes.css.map */

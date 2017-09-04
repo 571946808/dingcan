@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>订单管理</title>
+    <!--#include file="/pages/admin/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/admin/order-management/order-management.css">
+</head>
+<body>
+    <!--#include file="/pages/admin/common/header.html"-->
+    <div class="page clearfix">
+        <!--#include file="/pages/admin/common/sidebar.html"-->
+        <div class="holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                            <li><a href="#">订单管理</a></li>
+                            <li class="active">订单列表</li>
+                        </ol>
+                        <h2>订单管理-订单列表</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>搜索</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal J_searchForm">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">关键字</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="col-sm-3 form-control" placeholder="请输入姓名/电话" name="keyword">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">开始时间</label> 
+                                        <div class="col-sm-2">
+                                            <input type="text" class="col-sm-3 form-control date" name="startTime">
+                                        </div>
+                                        <label class="col-sm-1 control-label">结束时间</label> 
+                                        <div class="col-sm-2">
+                                            <input type="text" class="col-sm-3 form-control date" name="endTime">
+                                        </div>
+                                    </div>
+                                 <!--    <div class="form-group">
+                                        
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">便利店</label> 
+                                        <div class="col-sm-6">
+                                            <div class="checkbox block">
+                                                <label>
+                                                    <input type="checkbox" name="store" value="0" class="J_storeToggle">全部
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="store" value="1" class="J_storeCheckbox">师大店
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="store" value="2" class="J_storeCheckbox">师大店
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">订单状态</label> 
+                                        <div class="col-sm-6">
+                                            <div class="checkbox block">
+                                                <label>
+                                                    <input type="checkbox" name="status" value="0" class="J_statusToggle">全部
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="status" value="1" class="J_statusCheckbox">已完成
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="status" value="2" class="J_statusCheckbox">未完成
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">评价状态</label> 
+                                        <div class="col-sm-6">
+                                            <div class="checkbox block">
+                                                <label>
+                                                    <input type="checkbox" name="comment" value="0" class="J_commentToggle">全部
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="comment" value="1" class="J_commentCheckbox">未回复
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="comment" value="2" class="J_commentCheckbox">已回复
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="comment" value="3" class="J_commentCheckbox">未评价
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-3">
+                                        <div class="btn-toolbar">
+                                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>&nbsp;搜索</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>订单列表</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>订单编号</th>
+                                                <th>姓名</th>
+                                                <th>电话</th>
+                                                <th>配送地址</th>
+                                                <th>便利店</th>
+                                                <th>总金额</th>
+                                                <th>状态</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="J_template"></tbody>
+                                    </table>
+                                    <div class="J_pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order-status">
+        <select class="form-control">
+            <option value="0">已下单</option>
+            <option value="1">已完成</option>
+            <option value="2">已删除</option>
+        </select> 
+    </div>
+    <!--#include file="/pages/admin/common/footer.html"-->
+    <!--分页模板-->
+    <script type="text/template" id="tpl">
+        {@each list as it}
+            <tr data-order-id="&{it.id}">
+                <td>&{it.orderNumber}</td>
+                <td>&{it.name}</td>
+                <td>&{it.phone}</td>
+                <td>&{it.deliveryAddress}</td>
+                <td>&{it.store}</td>
+                <td>&{it.totalMoney}</td>
+                <td class="J_dishStatus">&{it.statuStr}</td>
+                <td class="J_oper">
+                    <a class="label-info J_view" href="javascript:;"><i class="fa fa-list"></i>&nbsp;查看详情</a>
+                    {@if it.status == 0}
+                        <a class="label-info J_changeStatus" href="javascript:;"><i class="fa fa-cog"></i>&nbsp;修改状态</a>
+                    {@else}
+                        <a class="label-info disable-change" href="javascript:;"><i class="fa fa-cog"></i>&nbsp;修改状态</a>
+                    {@/if}
+                    {@if it.commentStatus == 1}
+                        <a class="label-info J_replyComment" href="javascript:;"><i class="fa fa-commenting-o"></i>&nbsp;回复评价</a>
+                    {@else if it.commentStatus== 2}
+                        <a class="label-info J_checkComment" href="javascript:;"><i class="fa fa-comment-o"></i>&nbsp;查看评价</a>
+                    {@/if}
+                </td>
+            </tr>
+        {@/each}
+    </script>
+    <!--菜品详情Dialog-->
+    <script type="text/template" id="dishTpl">
+        {@each list as it}
+            <p>
+                <span>&{it.dishName}</span>&nbsp;x
+                <span>&{it.quantity}</span>
+            </p>
+        {@/each}
+    </script>
+    <!--回复评价Dialog-->
+    <script type="text/template" id="replyTpl">
+        <p>评价：&{list.comment}</p>
+        <hr>
+        <form class="J_commentForm" action="" method="">
+            <textarea class="commentReply" name="commentReply" placeholder="请回复！" data-valid-tip=" 内容不能为空，请重新输入" data-valid-rule="notNull"></textarea>
+        </form>
+    </script>
+    <!--查看评价Dialog-->
+    <script type="text/template" id="checkTpl">
+        <p>评价：&{list.comment}</p>
+        <p>回复：&{list.reply}</p>
+    </script>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/order-management/order-management', function(){
+                PW.page.orderManegement.orderManegement({
+                    renderTo: '.J_pagination',
+                    juicerRender: '#tpl',
+                    dataRender: '#J_template',
+                    url: '/mock/admin/order.json',
+                    pageSize: 10,
+                    configUrl: function(url,page,me,prevPaginationData){
+                        return url;
+                        // return url + '/' + page;
+                    }
+                });
+            });
+        });
+    </script>                    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>订单地址选择</title>
+    <!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/receiver-address.css">
+</head>
+<body>
+    <div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <!--后端暂存选择送餐地址后应跳转的地址-->
+            <a class="J_afterChooseLink hidden" href="#"></a>
+            <ul>
+                <li class="address-list J_choose" data-choose-id = "1">
+                    <div class="list-box">
+                        <p class="person-info">
+                            <span class="name">张三</span>
+                            <span class="sex">先生</span>
+                            <span class="phone">12345678911</span>
+                        </p>
+                        <p class="address-detail">XXX大街XXXXX号XXX小区XXX栋XXXX301室XXX大街XXXXX号XXX小区XXX栋XXXX301室</p>
+                    </div>
+                    <div class="default clearfix">
+                        <!--选择该地址时,去掉hidden类-->
+                        <div class="choosed-mark hidden">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                            <span>已选中</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="address-list J_choose" data-choose-id = "2">
+                    <div class="list-box">
+                        <p class="person-info">
+                            <span class="name">张三</span>
+                            <span class="sex">先生</span>
+                            <span class="phone">12345678911</span>
+                        </p>
+                        <p class="address-detail">XXX大街XXXXX号XXX小区XXX栋XXXX301室XXX大街XXXXX号XXX小区XXX栋XXXX301室</p>
+                    </div>
+                    <div class="default clearfix">
+                        <div class="choosed-mark hidden">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                            <span>已选中</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/receiver-address-management', function(S){
+                PW.page.ReceiverAddressManagement();
+            });
+        });
+    </script>
+</body>
+</html>

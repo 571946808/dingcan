@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>新增地址</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/receiver-address.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <form class="container J_submitForm" >
+            <input type="hidden" name="type" value="">
+            <ul class="add-detail">
+                <li>                                            
+                    <label>联系人</label>
+                    <input class="J_name" type="text" placeholder="您的姓名" value="" name="name"/>
+                </li>
+                <li class="sex-choose">
+                    <input class="sir" type="radio" value="" name="sex" id="man" checked="checked"/>
+                    <label for="man">先生</label>
+                    <input class="lady" type="radio" value="" name="sex" id="woman"/>
+                    <label for="woman">女士</label>
+                </li>
+                <li>
+                    <label>联系电话</label>
+                    <input class="J_phone" type="text" placeholder="您的手机号" value="" name="phone" />
+                </li>
+                 <li>
+                    <label>收货地址</label>
+                    <textarea class="J_address" placeholder="请写详细地址（如门牌号等）" name="address"></textarea>
+                </li>
+            </ul>
+            <p class="error-field J_error hidden">请输入联系人</p>
+            <button type="submit" class="submit-add J_submitBtn" >确定</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/receiver-address-add', function(S){
+                PW.page.ReceiverAddressAdd();
+            });
+        });
+    </script>
+</body>
+</html>

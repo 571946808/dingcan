@@ -1,0 +1,10 @@
+{
+  "code": 0,
+  "list":[
+	{"rootId": "1", "sequence":"001","message": "我对本次订餐非常满意！！！！我对本次订餐非常满意！！！！我对本次订餐非常满意！！！！我对本次订餐非常满意！！！！", "createdTime": "2016-10-12","nickname":"李某某","phone":"18844548877","status":"已回复"},
+	{"rootId": "2", "sequence":"002","message": "我对本次订餐非常满意！！！！", "createdTime": "2016-10-12","nickname":"王某某","phone":"18844108877","status":"未回复"},
+	{"rootId": "3", "sequence":"003","message": "我对本次订餐非常满意！！！！", "createdTime": "2016-10-12","nickname":"韩某某","phone":"18844118877","status":"已回复"},
+	{"rootId": "4", "sequence":"004","message": "我对本次订餐非常满意！！！！", "createdTime": "2016-10-12","nickname":"季某某","phone":"18844548877","status":"已结束"}
+  ],
+  "dataCount": "100"
+} 

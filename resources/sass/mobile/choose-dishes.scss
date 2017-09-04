@@ -1,0 +1,99 @@
+@import "./common/common-header";
+/*************classify content start**************/
+.container{
+    margin-top: (94rem / $param);
+}
+// .store-info{
+//     text-align:center;
+//     padding: (10rem / $param) 0 (30rem / $param);
+//     background-color: #38A2FA;
+//     color: #fff;
+//     font-size: (28rem / $param);
+// }
+.store-info{
+    padding: (10rem / $param) (28rem / $param);
+    background-color: #fff;
+    color: #666666;
+    font-size: (28rem / $param);
+    border-top:0.01333rem solid #c5c3c2;
+    border-bottom:0.01333rem solid #c5c3c2
+}
+.store-info .address{
+    float: left;
+    margin-right: (40rem / $param);
+    margin-bottom: (10rem / $param)
+    // white-space:nowrap;
+}
+.store-info .phone{
+    float: left;
+}
+.dish-list{
+    margin-bottom: (120rem / $param);
+}
+.dish-item{
+    padding: (20rem / $param) (28rem / $param);
+    border-bottom: (1rem / $param) solid #c5c3c2;
+    border-top: (1rem / $param) solid #c5c3c2;
+    background-color: #fff;
+} 
+.dish-item p{
+    display: inline-block;
+    font-size: (28rem / $param);
+    vertical-align: middle;
+}
+.classify-name{
+    padding: (10rem / $param) (30rem / $param); 
+    font-size: (30rem / $param);
+}
+.dish-name{
+    width: (369rem / $param);
+    color: #666666;
+    overflow: hidden;
+    margin-right: (10rem / $param);
+}
+.dish-item i{
+    font-size: (18rem / $param);
+    color: #bfbfbf;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: (18rem / $param);
+}
+.dish-item i.active{
+    color: #38A2FA;
+}
+.dish-price-sale{
+    width: (138rem / $param);
+    color:#ff0000;
+}
+.dish-item .add-dish{
+    width: (122rem / $param);
+    background-color: #38A2FA;
+    padding-top: (8rem / $param);
+    padding-bottom: (8rem / $param);
+    text-align: center;
+    color: white;
+    border-radius:(10rem / $param);
+    position: relative;
+}
+.add-dish .number-tip{
+    height: (30rem / $param);
+    line-height: (30rem / $param);
+    width: (30rem / $param);
+    font-size: (22rem / $param);
+    border-radius: (15rem / $param);
+    color: white;
+    position: absolute;
+    background-color: #ff4242;
+    text-align: center;
+    top: (-7rem / $param);
+    right:  (-4rem / $param);
+}
+.hidden{
+    display: none;
+}
+.tip{
+    color: #38A2FA;
+    font-size: (36rem / $param);
+    margin-top: (300rem / $param);
+    text-align: center;
+}

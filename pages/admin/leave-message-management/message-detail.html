@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>留言详情</title>
+    <!--#include file="/pages/admin/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/admin/leave-message-management/message-detail.css">
+</head>
+<body>
+    <!--#include file="/pages/admin/common/header.html"-->
+    <div class="page clearfix">
+        <!--#include file="/pages/admin/common/sidebar.html"-->
+        <div class="holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                            <li><a href="#">留言管理</a></li>
+                            <li class="active">留言详情</li>
+                        </ol>
+                        <h2>留言管理-留言详情</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>基本信息</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal" action="" method="">
+                                    <input name="rootId" type="hidden" value="">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">
+                                            昵称：
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <p class="form-control-static">小点儿</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">
+                                            手机号：
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <p class="form-control-static">18844775968</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">
+                                            日期：
+                                        </label>
+                                        <div class="col-sm-6">
+                                            <p class="form-control-static">2016-10-14</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4>留言详情</h4>
+                            </div>
+                            <div class="panel-body ">
+                                <div class="form-group customer-box">
+                                    <label class="customer pull-left">顾客</label>
+                                    <p class="customer-text pull-left">你们家的火爆大头菜真的是太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃了你们家的火爆大头菜真的是太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃太好吃了</p>
+                                </div>
+                                <div class="form-group business-box">
+                                    <label class="business pull-right">商家</label>
+                                    <p class="business-text pull-right">感谢您的评价！！！</p>
+                                </div>
+                                <div class="form-group customer-box">
+                                    <label class="customer pull-left">顾客</label>
+                                    <p class="customer-text pull-left">你们家的火爆大头菜太好吃了</p>
+                                </div>
+                                <div class="form-group business-box">
+                                    <label class="business pull-right">商家</label>
+                                    <p class="business-text pull-right">感谢您的评价感谢您的评价</p>
+                                </div>
+                                <form class="form-horizontal reply-message J_searchForm col-sm-12" action="" method="">
+                                    <textarea class="J_replyMessage col-sm-12" type="text" name="reply" placeholder="请回复该留言" value="" data-valid-tip="请输入留言信息|留言信息不能为空，请重新输入" data-valid-rule="notNull"></textarea>
+                                    <div class="form-group margin-top-20">
+                                        <button class="leave-message btn J_sendBtn col-sm-offset-5" type="submit"><i class="fa fa-pencil-square-o"></i>&nbsp;回复留言</button>
+                                        <button class="end-message btn" onclick="window.location.href=''" type=""><i class="fa fa-reply-all"></i>&nbsp;结束留言</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="/pages/admin/common/footer.html"-->
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/leave-message-management/message-detail', function(S){
+                PW.page.MessageDetail();
+            });
+        });
+    </script>       
+</body>
+</html>

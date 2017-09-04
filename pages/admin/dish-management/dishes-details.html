@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>菜品详情</title>
+		<!--#include file="/pages/admin/common/head.html"-->
+		<link rel="stylesheet" href="/resources/css/admin/dish-management/dish-management.css">
+	</head>
+	<body>
+		<!--#include file="/pages/admin/common/header.html"-->
+		<div class="page clearfix">
+			<!--#include file="/pages/admin/common/sidebar.html"-->
+			<div class="holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+								<li><a href="#">菜品管理</a></li>
+								<li class="active">菜品详情</li>
+							</ol>
+							<h2>菜品管理-菜品详情</h2>
+						</div>
+						<div>
+							<a class="btn btn-warning margin-bottom-15 margin-right-10 pull-right J_export" href="#" target="_blank"><i class="fa fa-download"></i>&nbsp;导出excel</a>
+						</div>
+						<div class="col-sm-12">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>列表</h4>
+								</div>
+								<div class="panel-body">
+									<table class="table table-hover table-bordered">
+										<thead>
+											<th>分类名称</th>
+											<th>编号</th>
+											<th>菜品名称</th>
+											<th>单价</th>
+											<th>发售数量</th>
+											<th>出售数量</th>
+											<th>未点到数量</th>
+										</thead>
+										<!-- <tbody>
+											<tr class="J_dishType">
+												<td rowspan="">套餐</td>
+												<td>00000007</td>
+												<td>海鲜套餐</td>
+												<td>20.00</td>
+												<td>20</td>
+												<td>20</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>00000008</td>
+												<td>海鲜套餐</td>
+												<td>20.00</td>
+												<td>20</td>
+												<td>20</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>00000008</td>
+												<td>海鲜套餐</td>
+												<td>20.00</td>
+												<td>20</td>
+												<td>20</td>
+												<td>3</td>
+											</tr>
+											<tr class="J_dishType">
+												<td rowspan="">套餐</td>
+												<td>00000007</td>
+												<td>海鲜套餐</td>
+												<td>20.00</td>
+												<td>20</td>
+												<td>20</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>00000008</td>
+												<td>海鲜套餐</td>
+												<td>20.00</td>
+												<td>20</td>
+												<td>20</td>
+												<td>3</td>
+											</tr>
+										</tbody> -->
+									</table>
+									<div class="no-data">暂无数据</div>
+									<div class="col-sm-6">
+										<div class="btn-toolbar">
+											<button class="btn btn-default" onclick="window.history.go(-1)" type="button"><i class="fa fa-undo"></i>&nbsp;返回上一页</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--#include file="/pages/admin/common/footer.html"-->
+		<script type="text/javascript">
+			KISSY.ready(function(S){
+				S.use('page/dish-management/dishes-details', function(S){
+					PW.page.DishManagement.DishesDetails();
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>提交订单</title>
+    <!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/cart.css">
+</head>
+<body>
+    <div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <div class="J_link choose-address clearfix">
+                <!--没有添加地址，使用以下code start-->
+                <!--后端需将点击所链接的“地址添加页的地址”地址刷在a中href-->
+                    <a class="J_linkHref hidden" href="baidu.com"></a>
+                    <ul class="address-info">
+                        <li class="personal-info">
+                            <span class="tip">您暂未添加送餐地址，请前往添加！</span>
+                        </li>
+                    </ul>
+                    <p class="nav-address-page"><i class="fa fa-angle-right"></i></p>
+                <!--没有添加地址，使用以上code end-->
+
+                <!--已有地址，使用以下code start-->
+                <!--后端需将点击所链接的“地址列表选择页”地址刷在a中href-->
+                    <!--<a class="J_linkHref hidden"  href="#"></a>-->
+                    <!--<p class="address-logo"><i class="fa fa-map-marker"></i></p>-->
+                    <!--<ul class="address-info J_link">-->
+                        <!--<li class="personal-info">-->
+                            <!--<span class="name">刘凤</span>-->
+                            <!--<span class="sex">女</span>-->
+                            <!--<span class="phone">13589754569</span>-->
+                        <!--</li>-->
+                        <!--<li class="address-detail-info">东北师范大学净月校区东北师范大学净月校区东北师范大学净月校区</li>-->
+                    <!--</ul>-->
+                    <!--<p class="nav-address-page"><i class="fa fa-angle-right"></i></p>-->
+                <!--已有地址，使用以上code end-->
+            </div>
+            <div class="order-dish-list clearfix">
+                <p class="dish-list-title">
+                    <i class="fa fa-spinner fa-spin"></i>
+                    <span class="detail-store-name">1号店</span>
+                </p>
+                <ul class="dish-list">
+                    <li class="dish-info clearfix">
+                        <span class="dish-name">米饭2两</span>
+                        <span class="dish-price">￥ 100.00</span>
+                        <span class="dish-num">x 100</span>
+                    </li>
+                    <li class="dish-info clearfix">
+                        <span class="dish-name">鲜肉饺子</span>
+                        <span class="dish-price">￥ 100.00</span>
+                        <span class="dish-num">x 100</span>
+                    </li>
+                    <li class="dish-info clearfix">
+                        <span class="dish-name">米饭2两米饭2两米饭2两米饭2两米饭2两</span>
+                        <span class="dish-price">￥ 100.00</span>
+                        <span class="dish-num">x 100</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="submit-order-footer clearfix">
+            <div class="order-pay-price">订单金额
+                <span class="total-price">￥23.23</span>
+            </div>
+            <button href="#" class="submit-order J_submitOrder">提交订单</button>
+            <!--无地址不可提交订单按钮-->
+            <!--<button href="#" class="disabled-submit-order J_submitOrder" disabled="disabled">提交订单</button>-->
+        </footer>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/submit-order', function(){
+                PW.page.submitOrder({});
+            });
+        })
+    </script>
+</body>
+</html>

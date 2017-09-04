@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/cart.css">
+</head>
+<body>
+    <div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <ul class="J_dishContainer">
+               <li class="dish-item" data-dish-id="11111">
+                    <span class="name">商务套餐商务套餐商务套餐商务套餐商务套餐商务套餐商务套餐商务套餐商务套餐</span>
+                    <span class="price">￥120.00</span>
+                    <div class="num-oper">
+                        <span class="sub J_sub"><i class="fa fa-minus"></i></span>
+                        <span class="number J_number">2</span>
+                        <span class="plus J_plus"><i class="fa fa-plus"></i></span>
+                    </div>
+               </li> 
+               <li class="dish-item" data-dish-id="2222">
+                    <span class="name">商务套餐</span>
+                    <span class="price">￥120.00</span>
+                    <div class="num-oper">
+                        <span class="sub J_sub"><i class="fa fa-minus"></i></span>
+                        <span class="number J_number">2</span>
+                        <span class="plus J_plus"><i class="fa fa-plus"></i></span>
+                    </div>
+               </li> 
+            </ul>
+        </div>
+        <footer class="clearfix">
+            <div class="shopping-cart-price">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+                <span class="badge-number J_totalNum">4</span>
+                <span class="total-price">&nbsp;&nbsp;￥<span class="J_totalPrice">23.23</span></span>
+            </div>
+            <a href="#" class="comfirm-order J_confirm">确认订单</a>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            KISSY.use('page/cart', function(){
+                PW.page.Cart();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import '../common/common-header';
+.container{
+	font-size: (36rem / $param);
+	margin-top: (314rem / $param);
+}
+/*--------------------------home-page start--------------------------------*/
+.today-order{
+	width: (400rem / $param);
+	height: (100rem / $param);
+	color: #fff;
+	text-align: center;
+	line-height: (100rem / $param);
+	background-color: #38A2FA;
+	//border-bottom: (1rem / $param) solid #c5c3c2;
+	border-radius: (20rem / $param);
+	margin-left: (175rem / $param);
+	display: block;
+}
+.all-order{
+	width: (400rem / $param);
+	height: (100rem / $param);
+	color: #fff;
+	text-align: center;
+	line-height: (100rem / $param);
+	background-color: #38A2FA;
+	//border-bottom: (1rem / $param) solid #c5c3c2;
+	border-radius: (20rem / $param);
+	margin-left: (175rem / $param);
+	margin-top: (100rem / $param);
+	display: block;
+}
+.exit-login{
+	width: (400rem / $param);
+	height: (100rem / $param);
+	color: #fff;
+	text-align: center;
+	line-height: (100rem / $param);
+	background-color: #FF0000;
+	border-radius: (20rem / $param);
+	margin-left: (175rem / $param);
+	margin-top: (100rem / $param);
+	display: block;
+}
+/*--------------------------home-page end--------------------------------*/

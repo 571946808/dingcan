@@ -1,0 +1,57 @@
+/*******************每日菜品添加页样式****************************/
+.store-list a{
+	padding: 5px 10px;
+}
+.dish-classify{
+    color: #089dd9;
+    font-weight: bold;
+    font-size: 14px;
+    height: 34px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+.dish-classify .add-dish{
+	padding: 0 8px;
+	font-size: 12px;
+	margin-top: 1px;
+}
+.no-dish{
+	text-align: center;
+}
+.no-data{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.date, .week{
+	padding-left: 30px;
+}
+.isCanOrder input
+{
+	vertical-align: middle;
+	margin-left: 120px;
+}
+.tipText{
+	vertical-align: middle;
+}
+.disabled{
+	background:#e6e6e6 !important;
+	pointer-events: none;
+	cursor: default;
+}
+.no-dish-classify-tip{
+	text-align: center;
+	margin-top: 20px;
+}
+.disabled{
+	background: rgb(206, 204, 205);
+}
+.show-status{
+	color: red;
+}
+.show-status-pass{
+	color: green;
+}
+.select-group{
+	margin-bottom: 31px;
+}
+

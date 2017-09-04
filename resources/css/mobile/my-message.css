@@ -1,0 +1,191 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  margin-top: 1.25333rem;
+  font-size: 0.45333rem; }
+
+/*--------------------------message-list--------------------------------*/
+.message-list {
+  display: block;
+  color: black;
+  padding: 0.26667rem 0.4rem;
+  border-bottom: 0.02667rem solid #ccc;
+  background: #fff; }
+
+.data {
+  color: #FF8C00;
+  font-size: 0.42667rem;
+  float: right; }
+
+.receive-data {
+  color: #FF8C00;
+  font-size: 0.4rem;
+  margin-left: 0.06667rem;
+  line-height: 0.37333rem; }
+
+.number {
+  padding: 0rem 0.16rem;
+  background: #2196f3;
+  color: #fff;
+  border-radius: 10%;
+  font-size: 0.4rem; }
+
+.username {
+  color: #2196f3;
+  font-size: 0.48rem; }
+
+.message-detail {
+  width: 9.33333rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 0.13333rem; }
+
+.message {
+  margin-left: 0.17333rem; }
+
+.message-li {
+  display: block;
+  color: black;
+  padding: 0.26667rem 0.26667rem;
+  border-bottom: 0.02667rem solid #ccc;
+  background: #fff; }
+
+.footer {
+  background: #fff;
+  color: #38A2FA;
+  border-top: 0.02667rem solid #cecccd;
+  padding-top: 0.50667rem;
+  padding-bottom: 0.50667rem;
+  font-size: 0.50667rem; }
+  .footer i {
+    margin: 0.10667rem; }
+
+/*--------------------------nickname-modify--------------------------------*/
+.nickname {
+  margin-top: 0.26667rem;
+  border: 0rem;
+  padding: 0.2rem 0.4rem;
+  width: 100%; }
+
+.remarks {
+  padding-left: 0.4rem;
+  padding-top: 0.13333rem;
+  color: #607d8b; }
+
+.to-blue {
+  background-color: #38a2fa;
+  font-size: 0.53333rem;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding: 0.13333rem 4.13333rem;
+  margin: 0.13333rem 0.26667rem;
+  text-align: center;
+  border: none; }
+
+.to-grey {
+  background-color: #ccc;
+  font-size: 0.53333rem;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding: 0.13333rem 4.13333rem;
+  margin: 0.13333rem 0.26667rem;
+  text-align: center;
+  border: none; }
+
+/*--------------------------message-details--------------------------------*/
+.message-box {
+  padding: 0.26667rem 0.4rem;
+  border-bottom: 0.02667rem solid #ccc;
+  background: #fff; }
+
+.send-message {
+  background: #38A2FA;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding: 0.04rem 0.2rem;
+  font-size: 0.45333rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.06667rem;
+  border: none;
+  margin-left: 0.13333rem; }
+
+.reply-input {
+  margin-top: 0.4rem;
+  margin-left: 0.2rem; }
+  .reply-input input {
+    border: 0rem;
+    padding: 0.13333rem;
+    width: 6.93333rem;
+    line-height: 0.53333rem;
+    border: 0.02667rem solid #FF8C00;
+    border-radius: 0.05333rem; }
+
+.usersname {
+  color: #38A2FA; }
+
+.reply-box {
+  background-color: #f0f0f0;
+  margin-top: 0.13333rem;
+  padding: 0.26667rem 0.13333rem;
+  font-size: 0.4rem; }
+
+.message-content {
+  padding: 0.06667rem 0.13333rem; }
+
+.error {
+  color: #f44336;
+  font-size: 0.37333rem;
+  margin-top: 0.13333rem;
+  margin-left: 0.10667rem; }
+
+/*# sourceMappingURL=my-message.css.map */

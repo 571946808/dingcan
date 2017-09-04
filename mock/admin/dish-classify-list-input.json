@@ -1,0 +1,31 @@
+{
+	"code": 0,
+	"data": {
+		"date": "2016-09-01",
+		"week": "星期四",
+		"id": "288",
+		"storeId": "888",
+		"auditStatus" : 4,
+		"dishTagList": [{
+			"dishTagId": 1,
+			"dishTagName": "海鲜套餐",
+			"dayDishList": [
+				{"id": 11, "name": "鲜虾拼盘", "price": 30.00, "quantity": 50},
+				{"id": 12, "name": "超值套餐", "price": 30.00, "quantity": 50}
+			]
+		},
+		{
+			"dishTagId": 3,
+			"dishTagName": "海鲜套餐",
+			"dayDishList": []
+		},
+		{
+			"dishTagId": 2,
+			"dishTagName": "素食套餐",
+			"dayDishList": [
+				{"id": 21, "name": "蔬菜拼盘", "price": 30.00, "quantity": 50}
+			]
+		}
+	]},
+	"errMsg": "返回错误信息！"
+}

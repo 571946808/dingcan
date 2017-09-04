@@ -1,0 +1,10 @@
+{
+    "code": 0,
+    "list": [
+        {"id":1, "orderNumber":"00123","name":"jiangx", "phone":"13125705767", "deliveryAddress":"师大三期10-2栋", "store":"师大店", "totalMoney":"15","status":"0","commentStatus":"1","statuStr":"0"},
+        {"id":2, "orderNumber":"00123","name":"jiangx", "phone":"13125705767", "deliveryAddress":"师大三期10-2栋", "store":"师大店", "totalMoney":"15","status":"2","commentStatus":"2","statuStr":"0"},
+        {"id":3, "orderNumber":"00123","name":"jiangx", "phone":"13125705767", "deliveryAddress":"师大三期10-2栋", "store":"师大店", "totalMoney":"15","status":"3","commentStatus":"1","statuStr":"0"},
+        {"id":4, "orderNumber":"00123","name":"jiangx", "phone":"13125705767", "deliveryAddress":"师大三期10-2栋", "store":"师大店", "totalMoney":"15","status":"0","commentStatus":"3","statuStr":"0"}
+    ],
+    "dataCount": 200
+}

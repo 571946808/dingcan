@@ -1,0 +1,115 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************search-list start********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************search-list end********************/
+/*--------------------------my-info-list start--------------------------------*/
+.container {
+  margin-top: 1.25333rem;
+  position: fixed; }
+
+.user-name {
+  width: 10rem;
+  height: 2rem;
+  font-size: 0.61333rem;
+  background-color: #38A2FA;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.26667rem;
+  display: block; }
+
+.my-info-list {
+  width: 10rem;
+  height: 1.33333rem;
+  font-size: 0.42667rem;
+  line-height: 1.33333rem;
+  border-bottom: 0.01333rem solid #c5c3c2;
+  color: #000000;
+  background-color: #fff;
+  display: block; }
+  .my-info-list .fa {
+    margin: 0rem 0.26667rem; }
+  .my-info-list .fa-lock {
+    color: #FF8C00;
+    padding: 0rem 0.04rem; }
+  .my-info-list .fa-map-marker {
+    color: #00bcd4;
+    padding: 0rem 0.04rem; }
+  .my-info-list .fa-pencil {
+    color: #4caf50; }
+  .my-info-list .fa-tag {
+    color: #2196f3; }
+
+.exit-login {
+  margin: 0.46667rem 0.33333rem;
+  width: 9.33333rem;
+  height: 1.33333rem;
+  font-size: 0.48rem;
+  color: #fff;
+  line-height: 1.33333rem;
+  text-align: center;
+  background-color: #38A2FA;
+  border-radius: 0.13333rem;
+  border: none;
+  display: block; }
+
+.success-tip {
+  text-align: center;
+  color: #2196f3;
+  font-size: 0.48rem;
+  margin-top: 3.73333rem;
+  border-radius: 0.16rem; }
+
+.failure-tip {
+  color: #e02222;
+  text-align: center;
+  font-size: 0.48rem; }
+
+/*--------------------------my-info-list end--------------------------------*/
+
+/*# sourceMappingURL=my-info.css.map */

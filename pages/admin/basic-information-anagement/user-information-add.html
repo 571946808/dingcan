@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户添加</title>
+    <!--#include file="/pages/admin/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/admin/basic-information-management/basic-information-management.css">
+</head>
+<body>
+<!--#include file="/pages/admin/common/header.html"-->
+<div class="page clearfix">
+    <!--#include file="/pages/admin/common/sidebar.html"-->
+    <div class="holder">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                        <li><a href="#">基本信息管理</a></li>
+                        <li class="active">用户管理</li>
+                    </ol>
+                    <h2>基本信息管理-添加用户</h2>
+                    <div class="alert alert-danger J_tip" role="alert">提示信息!</div>
+                </div>
+                <div class="col-sm-12 margin-bottom-30">
+                    <ul class="nav nav-tabs J_nav" role="tablist">
+                        <li role="presentation" class="active">
+                            <a class="tab" data-tabpanel="#user-store" role="tab" data-toggle="tab">添加便利店/顾客员</a>
+                        </li>
+                        <li role="presentation" >
+                            <a class="tab" data-tabpanel="#admin" role="tab" data-toggle="tab">添加管理员/操作人</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="user-store">
+                            <form class="form-horizontal J_operStoreForm" action="" method="">
+                                <!--data-oper-type: 1表示添加 0表示编辑-->
+                                <input class="J_operType" type="hidden" name="operType" data-oper-type="1"/>
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h4>添加便利店/顾客</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>手机号</label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_phone" type="text" value="" name="phone" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>密码<!-- 新密码--> </label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_password" type="password" id="pwd" data-valid-tip="请输入密码|密码有误，请重新输入" data-valid-rule="isPassword&length(5,16)" value="" name="password" />
+                                                <!--编辑-->
+                                                <!--<input class="w180 J_password" type="password" value="" name="password" />-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>确认密码 <!--确认新密码--></label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_confirmPassword" type="password" data-valid-tip="请再次输入密码|两次密码不同，请重新输入" data-valid-rule="isPassword&require(pwd)&equal(pwd)" value="" name="confirmPassword" />
+                                                <!--编辑-->
+                                                <!--<input class="w180 J_confirmPassword" type="password" data-valid-tip="请再次输入密码|两次密码不同，请重新输入" data-valid-rule="isPassword&require(pwd)&equal(pwd)|isNull" value="" name="confirmPassword" />-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>用户类型</label>
+                                            <div class="col-sm-6">
+                                                <div class="checkbox block">
+                                                    <label>
+                                                        <input class="J_role" type="checkbox" value="11" name="role" checked="checked"> 顾客
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox block">
+                                                    <label>
+                                                        <!--默认展开店面选项，若不需要默认，去掉checked="checked"即可-->
+                                                        <input class="J_storeType J_role" type="checkbox" value="12" name="role" checked="checked"> 店面
+                                                    </label>
+                                                    <div class="store-name J_store">
+                                                        <div class="clearfix">
+                                                            <label>
+                                                                <input type="radio" value="1" name="store"> 1号店
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="2" name="store"> 2号店
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-pull-5 error-tip hidden J_errorTip">用户类型不能为空，请重新选择</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <div class="btn-toolbar">
+                                                    <button class="btn-primary btn J_submitStoreBtn" type="submit" data-btn-type="loading"
+                                                            data-btn-loading-text="正在保存，请稍后...">
+                                                        <i class="fa fa-save"></i>
+                                                        &nbsp;保存
+                                                    </button>
+                                                    <button class="btn-default btn" type="reset"><i class="fa fa-undo"></i>&nbsp;重置</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="admin">
+                            <form class="form-horizontal J_operAdminForm" action="" method="">
+                                <!--标志管理员身份隐藏域-->
+                                <input type="hidden" name="type" value="">
+                                <!--操作管理员面板标志-->
+                                <!--<input class="J_identifyOper" type="hidden" value="0">-->
+                                <!--data-oper-type: 1表示添加 0表示编辑-->
+                                <input class="J_operType" type="hidden" name="operType" data-oper-type="1"/>
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h4>添加管理员/操作人</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>用户名</label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_adminName" type="text" value="" name="username" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>密码<!-- 新密码--> </label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_password" type="password" id="adminPwd" data-valid-tip="请输入密码|密码有误，请重新输入" data-valid-rule="isPassword&length(5,16)" value="" name="password" />
+                                                <!--编辑-->
+                                                <!--<input class="w180 J_password" type="password" value="" name="password" />-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>确认密码 <!--确认新密码--></label>
+                                            <div class="col-sm-6">
+                                                <input class="w180 J_confirmPassword" type="password" data-valid-tip="请再次输入密码|两次密码不同，请重新输入" data-valid-rule="isPassword&require(adminPwd)&equal(adminPwd)" value="" name="confirmPassword" />
+                                                <!--编辑-->
+                                                <!--<input class="w180 J_confirmPassword" type="password" data-valid-tip="请再次输入密码|两次密码不同，请重新输入" data-valid-rule="isPassword&require(pwd)&equal(pwd)|isNull" value="" name="confirmPassword" />-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><span class="requires">*</span>用户类型</label>
+                                            <div class="col-sm-6">
+                                                <div class="radio block padding-top-10">
+                                                    <label>
+                                                        <input type="radio" name="role" checked="checked" value="1"> 管理员
+                                                    </label>
+                                                </div>
+                                                <div class="radio block">
+                                                    <label>
+                                                        <input type="radio" name="role" value="4"> 操作人
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-pull-5 error-tip hidden J_errorTip">用户类型不能为空，请重新选择</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <div class="btn-toolbar">
+                                                    <button class="btn-primary btn J_submitAdminBtn" type="submit" data-btn-type="loading"
+                                                            data-btn-loading-text="正在保存，请稍后...">
+                                                        <i class="fa fa-save"></i>
+                                                        &nbsp;保存
+                                                    </button>
+                                                    <button class="btn-default btn" type="reset"><i class="fa fa-undo"></i>&nbsp;重置</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include file="/pages/admin/common/footer.html"-->
+<script type="text/javascript">
+    KISSY.ready(function(S){
+        S.use('page/basic-information-management/user-information-add, widget/tab', function(S){
+            PW.page.UserManagement.Add();
+        });
+    });
+</script>
+</body>
+</html>

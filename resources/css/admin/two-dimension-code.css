@@ -1,0 +1,40 @@
+/*******************二维码管理页面样式****************************/
+.create-code-box{
+	height: 158px;
+}
+.web-domain label{
+	margin-left:25px !important;
+}
+.initial-domain{
+	line-height: 32px;
+}
+.code-list-border{
+	border:1px solid #DDDDDD;
+	border-radius:5px;
+	margin-bottom:40px; 
+}
+.code-area{
+	width: 80px;
+    line-height: 23px;
+    height: 23px;
+	background-color: #2bbce0; 
+	color: #fff;
+	border-radius: 5px 0;
+}
+.form-group .form-control{
+	line-height:32px !important;
+}
+.form-group label.control-label{
+    margin-left: -20px;
+}
+.new-text{
+	width: 260px;
+}
+.input-box{
+	margin-left: 53px !important;
+}
+.J_createBtn{
+	display: block;
+	margin: 0px auto;
+	width:150px;
+}

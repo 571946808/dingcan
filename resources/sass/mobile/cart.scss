@@ -1,0 +1,246 @@
+@import "./common/common-header";
+.container{
+    margin-top: (94rem / $param);
+    font-size: (28rem / $param);
+    padding-bottom: (120rem / $param);
+}
+.dish-item{
+    padding:  (20rem / $param) (26rem / $param);
+    border-bottom: (2rem / $param) solid #cecccd;
+    border-top: (2rem / $param) solid #cecccd;
+    background: #fff;
+    margin-bottom: (20rem / $param);
+    span{
+        display: inline-block;
+    }
+    .name{
+        width: (395rem / $param);
+        vertical-align: middle;
+    }
+    .price{
+        width: (150rem / $param);
+        color: #ff8822;
+        vertical-align: middle;
+    }
+    .num-oper{
+        display: inline-block;
+        text-align: center;
+        height: (35rem / $param); 
+        line-height: (35rem / $param);
+        vertical-align: middle;
+    }
+    .num-oper span{
+         width: (35rem / $param);
+    }
+    .sub{
+        color: #38A2FA;
+        border: (2rem / $param) solid #38A2FA;
+        border-radius: 50%;
+    }
+    .plus{
+        color: #fff;
+        background: #38A2FA;
+        border: (2rem / $param) solid #38A2FA;
+        border-radius: 50%;
+    }
+}
+/*--------------------------footer--------------------------------*/
+footer{
+    width: (750rem / $param);
+    height: (100rem / $param);
+    line-height: (100rem / $param);
+    font-size: (32rem / $param);
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    .shopping-cart-price{
+        width: (430rem / $param);
+        float: left;
+        background: #2C2C2C;
+        padding-left:(20rem / $param);
+    }
+    .total-price{
+        font-size: (36rem / $param)
+    }
+    .badge-number{
+        width: (30rem / $param);
+        height: (30rem / $param);
+        line-height: (30rem / $param);
+        font-size: (20rem / $param);
+        background: #ff8822;
+        border: (1rem / $param) solid #ff8822;
+        border-radius: 50%; 
+        position: absolute;
+        left: (65rem / $param);
+        top: (-10rem / $param);
+        text-align: center;
+    }
+    .comfirm-order{
+        color: #fff;
+        float: left;
+        width: (300rem / $param);
+        text-align: center;
+        background: #38A2FA;
+    }
+}
+
+/***************************submit-order page style start*************************************/
+.choose-address{
+    background: #ffffff;
+    margin-bottom: (20rem / $param);
+    border-bottom: (2rem / $param) dashed #38A2FA;
+    padding: (20rem / $param);
+}
+.address-logo,
+.address-info,
+.nav-address-page{
+    float: left;
+}
+.address-logo{
+    width: 5%;
+    padding: (20rem / $param) 0;
+}
+.tip{
+    display: inline-block;
+    padding-top: (28rem / $param);
+    text-align: center;
+}
+ul.address-info{
+    width: 90%;
+    font-size: (28rem / $param);
+}
+.address-detail-info{
+    width: 90%;
+    margin-top: (10rem / $param);
+}
+.personal-info,.address-detail-info{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav-address-page{
+    padding: (28rem / $param) 0;
+}
+.nav-address-page i,
+.address-logo
+{
+    font-size: (36rem / $param);
+}
+.address-logo i{
+    color: #38A2FA;
+}
+.dish-list-title{
+    padding: (20rem / $param) 0 (20rem / $param) 0;
+    border-bottom: (1rem / $param) solid #a9a8af;
+}
+.order-dish-list ,.order-detail{
+    padding: 0 (20rem / $param) (10rem / $param) (20rem/$param);
+    background: #fff;
+}
+.dish-list{
+    padding: (20rem / $param) 0 0 0;
+}
+.detail-store-name{
+    font-size: (30rem / $param);
+    padding: 0 (10rem / $param) 0 (15rem / $param);
+}
+.dish-list-title i{
+    color: dodgerblue;
+    margin-right: (10rem / $param);
+}
+.dish-list{
+    margin:(10rem / $param) (5rem / $param) (15rem / $param) (5rem / $param);
+}
+.dish-list li{
+    margin-bottom: (15rem / $param);
+}
+.dish-list li,
+.detail-info-list li{
+    color: #84838a;
+}
+.dish-info span{
+    display: inline-block;
+}
+.dish-name {
+    width: 56%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dish-num{
+    float: right;
+    width: 15%;
+}
+.dish-price{
+    float: right;
+    width: 24%;
+    text-align: right;
+}
+.total-price{
+    color: #fff;
+    margin:  (10rem / $param) (25rem / $param) (25rem / $param) 0;
+}
+.order-detail{
+    margin-top: (20rem / $param);
+    padding-top: (20rem / $param);
+    padding-bottom: (20rem / $param);
+}
+.order-number{
+    display: inline-block;
+    float: right;
+    font-size: (24rem / $param);
+    line-height: (37rem / $param);
+}
+.order-title{
+    padding: (10rem / $param) 0 (15rem / $param) 0;
+    font-size: (28rem / $param);
+}
+.detail-info-title{
+    font-weight: bold;
+}
+.detail-info-list li{
+    padding: (15rem / $param) 0 (15rem / $param) 0;
+    border-top: (1rem / $param) solid #a9a8af;
+    font-size: (24rem / $param);
+}
+.submit-order-footer{
+    width: (750rem / $param);
+    height: (80rem / $param);
+    line-height: (80rem / $param);
+    font-size: (30rem / $param);
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    .order-pay-price{
+        width: (430rem / $param);
+        float: left;
+        background: #2C2C2C;
+        padding-left:(20rem / $param);
+    }
+    .total-price{
+        font-size: (36rem / $param);
+    }
+    .submit-order{
+        color: #fff;
+        float: left;
+        width: (300rem / $param);
+        text-align: center;
+        background: #38A2FA;
+        padding: (18rem /$param);
+        border: none;
+    }
+    .disabled-submit-order{
+        color: #fff;
+        float: left;
+        width: (300rem / $param);
+        text-align: center;
+        background: rgb(206, 204, 205);
+        padding: (18rem /$param);
+        border: none;
+    }
+}
+.submit-order-list{
+    border-bottom: 0;
+}
+/***************************submit-order page style end*************************************/
+

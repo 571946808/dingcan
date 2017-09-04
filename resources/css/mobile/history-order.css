@@ -1,0 +1,119 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+/***************************order page style start**********************************************/
+.container {
+  margin-top: 1.25333rem;
+  font-size: 0.34667rem; }
+
+.order-list {
+  margin-top: 0.26667rem; }
+
+li.order {
+  border: 0.01333rem solid #cecccd;
+  min-height: 2.4rem;
+  padding: 0.13333rem 0.26667rem 0.13333rem 0.26667rem;
+  margin-bottom: 0.26667rem;
+  background: #fff; }
+
+.order a {
+  display: none; }
+
+.date {
+  display: inline-block;
+  color: #a9a8af; }
+
+.nav-detail {
+  float: right;
+  font-size: 0.48rem; }
+
+.J_del {
+  color: red;
+  float: right;
+  margin-right: 0.2rem;
+  border-radius: 0.10667rem; }
+
+.J_del i {
+  font-size: 0.48rem; }
+
+.show-info div {
+  float: left; }
+
+.store-logo {
+  padding: 0.53333rem 0.26667rem 0.26667rem 0; }
+
+.detail-info {
+  width: 90%; }
+
+.store-name {
+  font-size: 0.4rem;
+  padding: 0.13333rem 0 0.2rem 0;
+  border-bottom: 0.01333rem solid #a9a8af; }
+
+.total-info {
+  margin-top: 0.2rem; }
+
+.price {
+  font-weight: bold;
+  font-size: 0.37333rem; }
+
+.store-logo i {
+  color: dodgerblue; }
+
+.message-tip {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  border: 0.01333rem solid red;
+  background-color: red;
+  border-radius: 50%; }
+
+/***************************order page style end**********************************************/
+
+/*# sourceMappingURL=history-order.css.map */

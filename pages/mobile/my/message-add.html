@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>新增留言</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/message-add.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <!-- 有昵称 start -->
+        <form class="container J_submitForm" action="" method="">
+            <textarea class="message-add J_messageAdd" name="addMessage" value="" placeholder="请输入您的留言内容"></textarea>
+            <p class="error-field J_error hidden">留言信息不能为空，请重新输入</p>
+            <button type="submit" class="confirm-submit J_submitBtn" >提交留言</button>
+        </form>
+        <!-- 有昵称 end -->
+        <!-- 无昵称 start -->
+        <div class="container nickname">
+            <span class="error-field">您暂未添加昵称信息，请前往添加</span>
+            <a href="#" class="confirm-submit">添加昵称</a>
+        </div>
+        <!-- 无昵称 end -->
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/message-add', function(){
+                PW.page.MessageAdd();
+            })
+        })
+    </script>
+</body>
+</html>

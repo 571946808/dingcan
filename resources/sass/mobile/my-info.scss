@@ -1,0 +1,71 @@
+@import "./common/search-list-header";
+/*--------------------------my-info-list start--------------------------------*/
+.container{
+    margin-top: (94rem / $param);
+    position: fixed;
+}
+.user-name{
+	width: (750rem / $param);
+	height: (150rem / $param);
+	font-size: (46rem / $param);
+	background-color: #38A2FA;
+	color: #fff;
+	text-align: center;
+	line-height: (150rem / $param);
+	margin-bottom: (20rem / $param);
+	display: block;
+}
+.my-info-list{
+	width: (750rem / $param);
+	height: (100rem / $param);
+	font-size: (32rem / $param);
+	line-height: (100rem / $param);
+	border-bottom: (1rem / $param) solid #c5c3c2;
+	color: #000000;
+	background-color: #fff;
+	display: block;
+	.fa{
+		margin: (0rem / $param) (20rem / $param);
+	}
+	.fa-lock{
+		color: #FF8C00;
+		padding:(0rem / $param) (3rem / $param);
+	}
+	.fa-map-marker{
+		color: #00bcd4;
+		padding:(0rem / $param) (3rem / $param);
+	}
+	.fa-pencil{
+		color: #4caf50;
+	}
+	.fa-tag{
+		color: #2196f3;
+	}
+}
+.exit-login{
+	margin: (35rem / $param) (25rem / $param);
+	width: (700rem / $param);
+	height: (100rem / $param);
+	font-size: (36rem / $param);
+	color: #fff;
+	line-height: (100rem / $param);
+	text-align: center;
+	background-color: #38A2FA;
+	border-radius: (10rem / $param);
+	border: none;
+	display: block;
+}
+.success-tip{
+	text-align: center;
+	color: #2196f3;
+	font-size: (36rem / $param);
+	margin-top:(280rem / $param);
+    border-radius: (12rem / $param);
+}
+.failure-tip{
+	color: #e02222;
+    text-align: center;
+	font-size: (36rem / $param);
+}
+	
+/*--------------------------my-info-list end--------------------------------*/

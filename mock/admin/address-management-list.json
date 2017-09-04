@@ -1,0 +1,10 @@
+{
+  "code": 0,
+  "list":[
+	{"partyId": "333", "name": "张珊珊", "sex": "0","phone":"18888888888","address":"新城大街"},
+	{"partyId": "333", "name": "张珊珊", "sex": "1","phone":"18888888888","address":"新城大街"},
+	{"partyId": "333", "name": "张珊珊", "sex": "2","phone":"18888888888","address":"新城大街"},
+	{"partyId": "333", "name": "张珊珊", "sex": "3","phone":"18888888888","address":"新城大街"}
+  ],
+  "dataCount": "100"
+}  

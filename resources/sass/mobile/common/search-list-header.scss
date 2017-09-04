@@ -1,0 +1,31 @@
+@import "./common";
+/****************************search-list start********************/
+.header{
+  background-color: #38A2FA;
+  //padding: (0rem / $param) (28rem / $param);
+  border-bottom: (2rem / $param) solid #38A2FA;
+  // height: (93rem / $param);
+  position: fixed;
+  width: (750rem / $param);
+  top: 0;
+  left: 0;
+  //z-index: 16; 
+  z-index: 2000;  /**have modified**/
+  h1{
+    font-size: (32rem / $param);
+    color: #fff;
+    text-align: center;
+    height: (93rem / $param);
+    line-height:(93rem / $param);
+  }
+  a{
+    position: absolute;
+    left: (30rem / $param);
+    top: (30rem / $param);
+  }
+  .back-icon{
+    font-size: (32rem / $param);
+    color: #fff;
+  }
+}
+/****************************search-list end********************/

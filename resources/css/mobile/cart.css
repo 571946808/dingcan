@@ -1,0 +1,278 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  margin-top: 1.25333rem;
+  font-size: 0.37333rem;
+  padding-bottom: 1.6rem; }
+
+.dish-item {
+  padding: 0.26667rem 0.34667rem;
+  border-bottom: 0.02667rem solid #cecccd;
+  border-top: 0.02667rem solid #cecccd;
+  background: #fff;
+  margin-bottom: 0.26667rem; }
+  .dish-item span {
+    display: inline-block; }
+  .dish-item .name {
+    width: 5.26667rem;
+    vertical-align: middle; }
+  .dish-item .price {
+    width: 2rem;
+    color: #ff8822;
+    vertical-align: middle; }
+  .dish-item .num-oper {
+    display: inline-block;
+    text-align: center;
+    height: 0.46667rem;
+    line-height: 0.46667rem;
+    vertical-align: middle; }
+  .dish-item .num-oper span {
+    width: 0.46667rem; }
+  .dish-item .sub {
+    color: #38A2FA;
+    border: 0.02667rem solid #38A2FA;
+    border-radius: 50%; }
+  .dish-item .plus {
+    color: #fff;
+    background: #38A2FA;
+    border: 0.02667rem solid #38A2FA;
+    border-radius: 50%; }
+
+/*--------------------------footer--------------------------------*/
+footer {
+  width: 10rem;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  font-size: 0.42667rem;
+  position: fixed;
+  bottom: 0;
+  color: #fff; }
+  footer .shopping-cart-price {
+    width: 5.73333rem;
+    float: left;
+    background: #2C2C2C;
+    padding-left: 0.26667rem; }
+  footer .total-price {
+    font-size: 0.48rem; }
+  footer .badge-number {
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.26667rem;
+    background: #ff8822;
+    border: 0.01333rem solid #ff8822;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.86667rem;
+    top: -0.13333rem;
+    text-align: center; }
+  footer .comfirm-order {
+    color: #fff;
+    float: left;
+    width: 4rem;
+    text-align: center;
+    background: #38A2FA; }
+
+/***************************submit-order page style start*************************************/
+.choose-address {
+  background: #ffffff;
+  margin-bottom: 0.26667rem;
+  border-bottom: 0.02667rem dashed #38A2FA;
+  padding: 0.26667rem; }
+
+.address-logo,
+.address-info,
+.nav-address-page {
+  float: left; }
+
+.address-logo {
+  width: 5%;
+  padding: 0.26667rem 0; }
+
+.tip {
+  display: inline-block;
+  padding-top: 0.37333rem;
+  text-align: center; }
+
+ul.address-info {
+  width: 90%;
+  font-size: 0.37333rem; }
+
+.address-detail-info {
+  width: 90%;
+  margin-top: 0.13333rem; }
+
+.personal-info, .address-detail-info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.nav-address-page {
+  padding: 0.37333rem 0; }
+
+.nav-address-page i,
+.address-logo {
+  font-size: 0.48rem; }
+
+.address-logo i {
+  color: #38A2FA; }
+
+.dish-list-title {
+  padding: 0.26667rem 0 0.26667rem 0;
+  border-bottom: 0.01333rem solid #a9a8af; }
+
+.order-dish-list, .order-detail {
+  padding: 0 0.26667rem 0.13333rem 0.26667rem;
+  background: #fff; }
+
+.dish-list {
+  padding: 0.26667rem 0 0 0; }
+
+.detail-store-name {
+  font-size: 0.4rem;
+  padding: 0 0.13333rem 0 0.2rem; }
+
+.dish-list-title i {
+  color: dodgerblue;
+  margin-right: 0.13333rem; }
+
+.dish-list {
+  margin: 0.13333rem 0.06667rem 0.2rem 0.06667rem; }
+
+.dish-list li {
+  margin-bottom: 0.2rem; }
+
+.dish-list li,
+.detail-info-list li {
+  color: #84838a; }
+
+.dish-info span {
+  display: inline-block; }
+
+.dish-name {
+  width: 56%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.dish-num {
+  float: right;
+  width: 15%; }
+
+.dish-price {
+  float: right;
+  width: 24%;
+  text-align: right; }
+
+.total-price {
+  color: #fff;
+  margin: 0.13333rem 0.33333rem 0.33333rem 0; }
+
+.order-detail {
+  margin-top: 0.26667rem;
+  padding-top: 0.26667rem;
+  padding-bottom: 0.26667rem; }
+
+.order-number {
+  display: inline-block;
+  float: right;
+  font-size: 0.32rem;
+  line-height: 0.49333rem; }
+
+.order-title {
+  padding: 0.13333rem 0 0.2rem 0;
+  font-size: 0.37333rem; }
+
+.detail-info-title {
+  font-weight: bold; }
+
+.detail-info-list li {
+  padding: 0.2rem 0 0.2rem 0;
+  border-top: 0.01333rem solid #a9a8af;
+  font-size: 0.32rem; }
+
+.submit-order-footer {
+  width: 10rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  font-size: 0.4rem;
+  position: fixed;
+  bottom: 0;
+  color: #fff; }
+  .submit-order-footer .order-pay-price {
+    width: 5.73333rem;
+    float: left;
+    background: #2C2C2C;
+    padding-left: 0.26667rem; }
+  .submit-order-footer .total-price {
+    font-size: 0.48rem; }
+  .submit-order-footer .submit-order {
+    color: #fff;
+    float: left;
+    width: 4rem;
+    text-align: center;
+    background: #38A2FA;
+    padding: 0.24rem;
+    border: none; }
+  .submit-order-footer .disabled-submit-order {
+    color: #fff;
+    float: left;
+    width: 4rem;
+    text-align: center;
+    background: #cecccd;
+    padding: 0.24rem;
+    border: none; }
+
+.submit-order-list {
+  border-bottom: 0; }
+
+/***************************submit-order page style end*************************************/
+
+/*# sourceMappingURL=cart.css.map */

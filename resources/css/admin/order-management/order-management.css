@@ -1,0 +1,17 @@
+#order-status{
+	display: none;
+}
+a.disable-change{
+	background-color: #c8c8c8;
+}
+.label-info[href].disable-change{
+	background-color: #c8c8c8; 
+	cursor: no-drop;
+}
+/*.label-info[href]:hover{
+	 
+}*/
+.commentReply{
+	rows: 3;
+	width: 100%;
+}

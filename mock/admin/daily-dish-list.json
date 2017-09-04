@@ -1,0 +1,9 @@
+{
+	"code": 0,
+	"list": [
+		{"id": 111, "storeName": "中东店", "date": "2016-08-29", "week": "周一", "auditStatusStr": "未通过", "operatorName": "周瑾", "auditName": "刘玲"},
+		{"id": 222, "storeName": "师大店", "date": "2016-08-29", "week": "周一", "auditStatusStr": "已通过", "operatorName": "周瑾", "auditName": "刘玲"},
+		{"id": 333, "storeName": "农大店", "date": "2016-08-29", "week": "周一", "auditStatusStr": "已通过", "operatorName": "周瑾", "auditName": "刘玲"}
+	],
+	"dataCount": 14
+}

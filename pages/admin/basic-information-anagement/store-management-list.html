@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>店面管理列表</title>
+		<!--#include file="/pages/admin/common/head.html" -->
+	</head>
+	<body>
+		<!--#include file="/pages/admin/common/header.html"-->
+		<div class="page clearfix">
+			<!--#include file="/pages/admin/common/sidebar.html"-->
+			<div class="holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+							  	<li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+							  	<li><a href="#">用户管理</a></li>
+							  	<li class="active">店面管理</li>
+							</ol>
+							<h2>店面管理-店面管理列表</h2>
+						</div>
+						<div class="col-sm-12">
+							<div class="alert alert-success J_tip" role="alert">添加成功!</div>
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>店面列表</h4>
+								</div>
+								<div class="panel-body">
+									<a class="btn btn-success margin-bottom-15" href="#"><i class="fa fa-plus"></i>&nbsp;添加店面</a>
+									<form class="J_operForm">
+										<div class="table-responsive">
+										  	<table class="table table-hover table-bordered">
+										    	<thead>
+										    		<tr>
+										    			<th>店面名称</th>
+										    			<th>地址</th>
+										    			<th>手机号</th>
+										    			<th>状态</th>
+										    			<th>操作</th>
+										    		</tr>
+										    	</thead>
+										    	<tbody id="J_template">
+										    		<tr data-store-id="1">
+										    			<td>一号店</td>
+										    			<td>吉林省长春市净月经济开发区</td>
+										    			<td>18844548779</td>
+										    			<td data-store-status="1" class="J_status">启用</td>
+										    			<td>
+										    				<a href="#" class="label-info"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+										    				<a href="javascript:;" class="label-info J_convert"><i class="fa fa-circle"></i>&nbsp;禁用</a>
+										    				<a href="javascript:;" class="label-info J_del"><i class="fa fa-times"></i>&nbsp;删除</a>
+										    			</td>
+										    		</tr>
+										    		<tr data-store-id="2">
+										    			<td>二号店</td>
+										    			<td>吉林省长春市南关区</td>
+										    			<td>18844546789</td>
+										    			<td data-store-status="2" class="J_status">禁用</td>
+										    			<td>
+										    				<a href="#" class="label-info"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+										    				<a href="javascript:;" class="label-info J_convert"><i class="fa fa-check"></i>&nbsp;启用</a>
+										    				<a href="javascript:;" class="label-info J_del"><i class="fa fa-times"></i>&nbsp;删除</a>
+										    			</td>
+										    		</tr>  
+										    	</tbody>
+										  	</table>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--#include file="/pages/admin/common/footer.html"-->
+		<script type="text/javascript">
+			KISSY.ready(function(S){
+				S.use('page/basic-information-management/store-management-list', function(S){
+					PW.page.BasicInfoManagement.StoreManagement.List({});
+				});
+			});
+		</script>		
+	</body>
+</html>

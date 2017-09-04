@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>今日订单</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/store/today-order.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <form id="wrapper" class="scroll">
+                <ul class="order-list J_scroll">
+                    <!--下拉加载组件默认初始可加载数据，后端无需刷默认数据-->
+                    <!-- <li class="order J_link">
+                        <div class="order-head">
+                            <span class="order-sequence">#12</span>
+                            <span class="delivery-address">X大街X号X小区X栋X室</span>
+                            <span class="order-status">已下单</span>
+                            <div class="order-header">
+                                <span class="name">王伟 先生</span>
+                                <span class="phone">18844548879</span>
+                            </div>
+                        </div>
+                        <div class="order-body">
+                            <span class="order-time">下单时间：05-16 16:34</span>
+                            <span class="order-number">订单号：1006578769152880</span>
+                        </div>
+                        <span class="total-money">本单收入：<span class="money-number">￥40.00</span></span>
+                    </li> -->
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script type="text/template" id="orderListTpl">
+        {@each list as it}
+            <li class="order J_link">
+                <!-- 刷链接详情地址 -->
+                <a class="link" href="&{it.src}"></a>
+                <div class="order-head">
+                    <span class="order-sequence">#&{it.orderSequence}</span>
+                    <span class="delivery-address">&{it.deliveryAddress}</span>
+                    <span class="order-status">&{it.orderStatus}</span>
+                    <div class="order-header">
+                        <span class="name">&{it.name}</span>
+                        <span class="phone">&{it.phone}</span>
+                    </div>
+                </div>
+                <div class="order-body">
+                    <span class="order-time">下单时间：&{it.orderTime}</span>
+                    <span class="order-number">订单号：&{it.orderNumber}</span>
+                </div>
+                <span class="total-money">本单收入：<span class="money-number">&{it.totalMoney}</span></span>
+            </li>
+        {@/each}
+    </script>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/store/today-order',function(){
+                PW.page.Store.TodayOrder();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>每日菜品</title>
+		<!--#include file="/pages/admin/common/head.html"-->
+	</head>
+	<body>
+		<!--#include file="/pages/admin/common/header.html"-->
+		<div class="page clearfix">
+			<!--#include file="/pages/admin/common/sidebar.html"-->
+			<div class="holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><i class="fa fa-home">&nbsp;首页</i></a></li>
+								<li><a href="#">菜品管理</a></li>
+								<li class="active">每日菜品</li>
+							</ol>
+							<h2>菜品管理-每日菜品</h2>
+						</div>
+						<div class="col-sm-12">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>搜索</h4>
+								</div>
+								<div class="panel-body">
+									<form class="form-horizontal J_searchForm" action="" method="">
+										<div class="form-group">
+											<label class="col-sm-3 control-label">店面名称</label>
+											<div class="col-sm-6">
+												<div class="checkbox block">
+													<label>
+                                                        <input class="J_selectAll"  type="checkbox" value="1" name="storeIdList">全部
+                                                    </label>
+                                                    <label>
+                                                        <input class="J_storeName" type="checkbox" value="11" name="storeIdList">中东店
+                                                    </label>
+                                                    <label>
+                                                        <input class="J_storeName" type="checkbox" value="12" name="storeIdList">师大店
+                                                    </label>
+                                                    <label>
+                                                        <input class="J_storeName" type="checkbox" value="13" name="storeIdList">农大店
+                                                    </label>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-sm-offset-3">
+											<div class="toolbar">
+												<button class="btn btn-primary" type="submit"><i class="fa fa-search">&nbsp;搜索</i></button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>列表</h4>
+								</div>
+								<div class="panel-body">
+									<a href="" class="btn btn-success margin-bottom-15"><i class="fa fa-plus"></i>&nbsp;添加菜品</a>
+									<div class="table-responsive">
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>店面名称</th>
+													<th>时间</th>
+													<th>星期</th>
+													<th>审核状态</th>
+													<th>操作人</th>
+													<th>审核人</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody id="J_template"></tbody>
+										</table>
+										<div class="J_pagination"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--#include file="/pages/admin/common/footer.html"-->
+		<script type="text/template" id="tpl">
+		{@each list as it}
+			<tr>
+				<td>&{it.storeName}</td>
+				<td>&{it.date}</td>
+				<td>&{it.week}</td>
+				<td>&{it.auditStatusStr}</td>
+				<td>&{it.operatorName}</td>
+				<td>&{it.auditName}</td>
+				<td>
+					<a href="/&{it.id}" class="label-info"><i class="fa fa-search"></i>&nbsp;查看详情</a>
+				</td>
+			</tr>
+		{@/each}
+		</script>
+		<script type="text/javascript">
+			KISSY.ready(function(S){
+				S.use('page/dish-management/daily-dish-list', function(S){
+					PW.page.DishManagement.DailyDishList({
+                        renderTo: '.J_pagination',
+                        juicerRender: '#tpl',
+                        dataRender: '#J_template',
+                        url: '/mock/admin/daily-dish-list.json',
+                        pageSize: 10,
+                        configUrl: function(url,page,me,prevPaginationData){
+                            return url;
+							// return url + '/' + page;
+                        }
+                    });
+				});
+			});
+		</script>
+	</body>
+</html>

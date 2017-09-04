@@ -1,0 +1,9 @@
+.leave-message{
+	width: 400px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.table{
+	table-layout: fixed;
+}

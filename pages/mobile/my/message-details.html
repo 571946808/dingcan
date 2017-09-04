@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>留言详情</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/my-message.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <div class="container">
+            <div class="message-box">
+                <span class="username">小仙女</span><span class="data">2016-10-14</span>
+                <p class='message-content'>外卖送得好慢好慢好慢好慢好慢好慢好慢好慢好慢好慢好慢好慢</p>
+                <div class="reply-box">
+                    <p class= "reply-message clearfix">
+                        <span class="usersname">掌柜的</span>
+                        <span class="data">2016-10-14</span>
+                        <p>下次会很快很快很快很快很快很快很快很快很快很快很快很快很快很快的</p>
+                    </p>
+                    <p class= "reply-message clearfix">
+                        <span class="usersname">小仙女</span><span class="data">2016-10-14</span>
+                        <p>我不信我不信我不信我不信我不信我不信我不信我不信我不信我不信</p>
+                    </p>
+                </div>
+                <form class="reply-input J_submitForm" action='' method=''>
+                    <input class="J_replyMessage" type="text" placeholder="回复该留言" value="" name="message">
+                    <button type="button" class="send-message J_sendBtn">发送</button>
+                    <p class="J_error error" hidden>回复内容不能为空</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/my/message-details', function(){
+                PW.page.MessageDetails();
+            })
+        })
+    </script>
+</body>
+</html>

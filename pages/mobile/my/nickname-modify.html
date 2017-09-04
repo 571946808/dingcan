@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改昵称</title>
+	<!--#include file="/pages/mobile/common/head.html"-->
+	<link rel="stylesheet" href="/resources/css/mobile/my-message.css">
+</head>
+<body>
+	<div class="page">
+        <!--#include file="/pages/mobile/common/sub-common-header.html"-->
+        <form class="container J_submitForm" action = "" method = "">
+        	<input class="nickname J_nickname" type="text" placeholder="您的昵称" value="" name="nickname"/>
+        	<p class="remarks">昵称将在我的留言中显示</p>
+            <button type="submit" class="to-grey J_submitBtn" >确定</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/nickname-modify', function(){
+                PW.page.NicknameModify();
+            })
+        })
+    </script>
+</body>
+</html>

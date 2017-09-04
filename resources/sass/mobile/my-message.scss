@@ -1,0 +1,152 @@
+@import "./common/common-header";
+.container{
+    margin-top: (94rem / $param);
+    font-size: (34rem / $param);
+}
+/*--------------------------message-list--------------------------------*/
+// .message-list{
+// 	padding:(20rem / $param) (20rem / $param);
+// 	border-bottom:(2rem / $param) solid #ccc;
+// 	background:#fff;
+// 	height:(100rem / $param);
+// }
+.message-list{
+	display:block;
+	color:black;
+	padding:(20rem / $param) (30rem / $param);
+	border-bottom:(2rem / $param) solid #ccc;
+	background:#fff;
+}
+.data{
+	color:#FF8C00;
+	font-size: (32rem / $param);
+	float:right;
+}
+.receive-data{
+	color:#FF8C00;
+	font-size: (30rem / $param);
+	margin-left:(5rem / $param);
+	line-height:(28rem / $param);
+}
+.number{
+	padding:(0rem / $param) (12rem / $param);
+	background:#2196f3;
+	color:#fff;
+	border-radius:10%;
+	font-size: (30rem / $param);
+}
+.username{
+	color:#2196f3;
+	font-size: (36rem / $param);
+}
+.message-detail{
+	width:(700rem / $param);
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden;
+	padding-top:(10rem / $param);
+}
+.message{
+	margin-left:(13rem / $param);
+}
+.message-li{
+	display:block;
+	color:black;
+	padding:(20rem / $param) (20rem / $param);
+	border-bottom:(2rem / $param) solid #ccc;
+	background:#fff;
+}
+.footer{
+	background:#fff;
+	color:#38A2FA;
+	border-top:(2rem / $param) solid #cecccd;
+	padding-top:(38rem / $param);
+	padding-bottom:(38rem / $param);
+	font-size:(38rem / $param);
+	i{
+	    margin: (8rem / $param);
+	}
+}
+/*--------------------------nickname-modify--------------------------------*/
+.nickname{
+	margin-top:(20rem / $param);
+	border: (0rem / $param);
+	padding:(15rem / $param) (30rem / $param);
+	width:100%;
+}
+.remarks{
+	padding-left:(30rem / $param);
+	padding-top:(10rem / $param);;
+	color:#607d8b;
+}
+
+.to-blue{
+	background-color: #38a2fa;
+	font-size:(40rem / $param);
+	color:#fff;
+	border-radius:	(10rem / $param);
+	padding:(10rem / $param) (310rem / $param);
+	margin:(10rem / $param) (20rem / $param);
+	text-align: center;
+	border:none;
+}
+.to-grey{
+	background-color: #ccc;
+	font-size:(40rem / $param);
+	color:#fff;
+	border-radius:	(10rem / $param);
+	padding:(10rem / $param) (310rem / $param);
+	margin:(10rem / $param) (20rem / $param);
+	text-align: center;
+	border:none;
+}
+/*--------------------------message-details--------------------------------*/
+.message-box{
+	padding:(20rem / $param) (30rem / $param);
+	border-bottom:(2rem / $param) solid #ccc;
+	background:#fff;
+}
+.send-message{
+	background: #38A2FA;
+	color:#fff;
+	border-radius:	(10rem / $param);
+	padding:(3rem / $param) (15rem / $param);
+	font-size: (34rem / $param);
+	text-align: center;
+	display:inline-block;
+	border-radius: (5rem / $param);
+	border: none;
+	margin-left:(10rem / $param);
+}
+.reply-input{
+	margin-top: (30rem / $param);
+	margin-left:(15rem / $param);
+	input{
+		border: (0rem / $param);
+		padding:  (10rem / $param);
+		width:(520rem / $param);
+		line-height:(40rem / $param);
+		border:(2rem / $param) solid #FF8C00;
+		border-radius:(4rem / $param);
+	}
+
+}
+.usersname{
+	color:#38A2FA;
+}
+.reply-box{
+	background-color:#f0f0f0;
+	margin-top:(10rem / $param);
+	padding:(20rem / $param) (10rem / $param);
+	font-size: (30rem / $param);
+}
+.message-content{
+	padding:(5rem / $param) (10rem / $param);
+}
+.error{
+	color:#f44336;
+	font-size: (28rem / $param);
+	margin-top:(10rem / $param);
+	margin-left:(8rem / $param);
+}

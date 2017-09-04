@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>订单</title>
+    <!--#include file="/pages/mobile/common/head.html"-->
+    <link rel="stylesheet" href="/resources/css/mobile/history-order.css">
+</head>
+<body>
+    <div class="page">
+        <!--#include file="/pages/mobile/common/main-common-header.html"-->
+        <div class="container">
+            <div id="wrapper" class="scroll">
+                <ul class="order-list J_scroll">
+                    <!--下拉加载组件默认初始可加载数据，后端无需刷默认数据-->
+                    <!--<li class="order">-->
+                        <!--<p>-->
+                            <!--订单<span>已完成</span>-->
+                            <!--<span class="date">2016-09-01</span>-->
+                            <!--<span class="J_del"><i class="fa fa-trash"></i></span>-->
+                        <!--</p>-->
+                        <!--<div class="show-info">-->
+                            <!--<div class="store-logo">-->
+                                <!--<i class="fa fa-home fa-2x"></i>-->
+                            <!--</div>-->
+                            <!--<div class="detail-info">-->
+                                <!--<p class="store-name">1号便利店</p>-->
+                                <!--<p class="total-info">共 <span>4</span> 份 , 实付￥<span class="price">13.00</span></p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+        <!--#include file="/pages/mobile/common/footer.html"-->
+    </div>
+    <script type="text/template" id="orderListTpl">
+        {@each list as it}
+            <li class="order J_link" data-order-id="&{it.id}">
+                <!--刷链接详情地址-->
+                <a class="link" href="&{it.src}"></a>
+                <p class="clearfix">
+                    {@if it.commentIsViewed}
+                        <em class="message-tip"></em>
+                    {@/if}
+                    订单<span>&{it.status}</span>
+                    <span class="date">&{it.createdTime}</span>
+                    <span class="nav-detail"><i class="fa fa-angle-right"></i></span>
+                </p>
+                <div class="show-info">
+                    <div class="store-logo">
+                        <i class="fa fa-home fa-2x"></i>
+                    </div>
+                    <div class="detail-info">
+                        <p class="store-name">&{it.storeName}</p>
+                        <p class="total-info clearfix">
+                            共 <span>&{it.quantity}</span> 份 , 实付￥<span class="price">&{it.totalMoney}</span>
+                            <span class="J_del"><i class="fa fa-trash"></i></span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        {@/each}
+    </script>
+    <script type="text/javascript">
+        KISSY.ready(function(S){
+            S.use('page/history-order', function(){
+                PW.page.Order({});
+            })
+        })
+    </script>
+</body>
+</html>

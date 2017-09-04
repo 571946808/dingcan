@@ -1,0 +1,11 @@
+{
+  "code": 1,
+  "list":[
+    {"id":1, "type": "顾客", "username": "张三", "store": "店面1"},
+    {"id":2,"type": "顾客", "username": "张三", "store": "店面1"},
+    {"id":3,"type": "顾客", "username": "张三", "store": "店面1"},
+    {"id":4,"type": "顾客", "username": "张三", "store": "店面1"},
+    {"id":5,"type": "顾客", "username": "张三", "store": "店面1"}
+  ],
+  "dataCount": "100"
+}

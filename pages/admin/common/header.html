@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default navbar-static-top admin-nav J_admin_nav">
+	<a class="left-toggle pull-left" href="javascript:;">
+		<i class="fa fa-bars"></i>
+	</a>
+	<a class="pull-left logo-text menu-list-logo" href="javascript:;">方惠圆订餐后台管理</a>
+	<a class="pull-right header-menu" href="javascript:;"><i class="fa fa-bars"></i>&nbsp;</a>
+	<ul class="nav navbar-nav">
+		<li>
+			<a class="menu-list J_layer_1_menu" data-menu-id="1" href="javascript:;">用户信息管理</a>
+			<ul class="dropdown-menu arrow" aria-labelledby="dLabel">
+				<li><a class="J_menu" href="javascript:;">员工信息管理</a></li>
+			</ul>
+		</li>
+		<li class="active">
+			<a class="menu-list J_layer_1_menu" data-menu-id="2" href="javascript:;">权限管理</a>
+			<ul class="dropdown-menu arrow" aria-labelledby="dLabel">
+				<li><a class="J_menu" href="javascript:;">超级权限管理</a></li>
+				<li><a class="J_menu" href="javascript:;">安全组权限管理</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav hello-administrator pull-right">
+		<li>
+			<a class="menu-list J_adminInfo" href="javascript:;">你好，管理员！<span class="caret"></span></a>
+			<ul class="dropdown-menu arrow" aria-labelledby="dLabel">
+				<li><a href="javascript:;"><i class="fa fa-user"></i>&nbsp;修改个人信息</a></li>
+				<li class="divider"></li>
+				<li><a href="javascript:;"><i class="fa fa-sign-out"></i>&nbsp;退出登录</a></li>
+			</ul>
+		</li>
+		<li>
+			<img class="pull-right img-responsive administrator" src="/resources/img/admin/admin.png" alt="管理员图片" title="管理员图片">
+		</li>
+	</ul>
+</nav>
+
+<script type="text/javascript">
+	KISSY.ready(function(S){
+		S.use('module/header, widget/ext, module/back-to-top', function(S){
+			PW.module.header();
+			PW.module.BackToTop();
+		});
+	});
+</script>

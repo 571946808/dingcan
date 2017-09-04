@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>每日菜品-添加(只有录入功能)</title>
+		<!--#include file="/pages/admin/common/head.html"-->
+		<link rel="stylesheet" href="/resources/css/admin/dish-management/dish-management.css">
+	</head>
+	<body>
+		<!--#include file="/pages/admin/common/header.html"-->
+		<div class="page clearfix">
+			<!--#include file="/pages/admin/common/sidebar.html"-->
+			<div class="holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+								<li><a href="#">菜品管理</a></li>
+								<li class="active">每日菜品</li>
+							</ol>
+							<h2>菜品管理-每日菜品</h2>
+						</div>
+						<div class="col-sm-12">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>店面列表</h4>
+								</div>
+								<div class="panel-body">
+									<!--无店面内容时，后台控制显示以下P-->
+									<!--<p class="no-dish-classify-tip">暂无店面信息，请先添加店面信息</p>-->
+									<label>请选择店面：</label>
+									<div class="col-sm-11 margin-top-15 margin-bottom-15 margin-left-50 store-list">
+                                        <!--若店面按钮为禁止状态，后台只需将在a标签中增加disabled类即可-->
+										<a href="javascript:;" class="label-info J_storeBtn" data-store-id="1"><i class="fa fa-bookmark-o"></i>&nbsp;中东店</a>
+										<a href="javascript:;" class="label-info J_storeBtn" data-store-id="2"><i class="fa fa-bookmark-o"></i>&nbsp;师大店</a>
+										<a href="javascript:;" class="label-info J_storeBtn" data-store-id="3"><i class="fa fa-bookmark-o"></i>&nbsp;农大店</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4>
+										当前所选的店面名称：
+										<span class="J_currentStore" data-store-id="1">中东店</span>
+										<span class="date J_date">2016-08-31</span>
+										<span class="week J_week">星期三</span>
+									</h4>
+								</div>
+								<div class="panel-body J_dishClassifyRender">
+									<!--无分类内容时，后台控制显示以下P-->
+									<!--<p class="no-dish-classify-tip">暂无菜品分类信息，请先添加菜品分类信息</p>-->
+									<div class="form-group">
+										<input class="idInp" type="hidden" name="id" value="22">
+										<input class="storeId" type="hidden" name="storeId" value="888">
+										<label>当前状态为: </label>&nbsp;
+										<!--后台刷审核状态字符串-->
+										<!--Tip: 绿色字体样式class为："show-status-pass"-->
+										<span class="J_statusTip show-status">未提交</span>
+									</div>
+									<div class="table-responsive" data-dish-tag-id="11">
+										<div class="col-sm-12 no-padding-left dish-classify">
+											海鲜套餐
+											<a href="javascript:;" class="label-info pull-right add-dish J_addBtn"><i class="fa fa-plus"></i>&nbsp;添加菜品</a>
+										</div>
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>菜品名称</th>
+													<th>价格</th>
+													<th>发售数量</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr data-dish-id="2323">
+													<form action="" method="">
+														<input type="hidden" name="id" value="1"/>
+														<td>
+															虾米套餐
+															<input type="hidden" name="name" value="虾米套餐"/>
+														</td>
+														<td>
+															30.00
+															<input type="hidden" name="price" value="30.00"/>
+														</td>
+														<td>
+															30
+															<input type="hidden" name="quantity" value="30"/>
+														</td>
+														<td>
+															<a href="javascript:;" class="label-info J_editBtn"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+															<a href="javascript:;" class="label-info J_delBtn"><i class="fa fa-times"></i>&nbsp;删除</a>
+														</td>
+													</form>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-sm-offset-5">
+										<!--Tip：需后台在刷页时判断当前为是否可提交状态-->
+										<!--可提交 code：-->
+										<button class="btn btn-success margin-bottom-15 J_submit"><i class="fa fa-check"></i>&nbsp;确认提交</button>
+										<!--不可提交 code：-->
+										<!--<button class="btn btn-success margin-bottom-15 J_submit" disabled="disabled"><i class="fa fa-check"></i>&nbsp;确认提交</button>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--#include file="/pages/admin/common/footer.html"-->
+		<script type="text/template" id="J_dishClassifyTpl">
+			<div class="form-group">
+				<input class="storeId" type="hidden" name="storeId" value="&{list.storeId}">
+				<input class="idInp" type="hidden" name="id" value="&{list.id}">
+				<label >当前状态为: </label>&nbsp;
+					{@if list.auditStatus == 1}
+						<span class="J_statusTip show-status">未提交</span>
+					{@else if list.auditStatus == 2}
+						<span class="J_statusTip show-status">提交未审核</span>
+					{@else if list.auditStatus == 3}
+						<span class="J_statusTip show-status">审核未通过</span>
+					{@else}
+						<span class="J_statusTip show-status-pass">审核通过</span>
+					{@/if}
+			</div>
+			{@each list.dishTagList as it}
+			<div class="table-responsive" data-dish-tag-id="&{it.dishTagId}">
+				<div class="col-sm-12 no-padding-left dish-classify">
+					&{it.dishTagName}
+                    {@if list.auditStatus == 1 || list.auditStatus == 3}
+                    	<a href="javascript:;" class="label-info pull-right add-dish J_addBtn"><i class="fa fa-plus"></i>&nbsp;添加菜品</a>
+                    {@else}
+                    	<a href="javascript:;" class="label-info pull-right add-dish J_addBtn disabled"><i class="fa fa-plus"></i>&nbsp;添加菜品</a>
+                    {@/if}
+                </div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>菜品名称</th>
+							<th>价格</th>
+							<th>发售数量</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						{@if it.dayDishList.length == 0}
+							<td colspan="4" class="no-dish">此分类下暂无菜品！</td>
+						{@else}
+							{@each it.dayDishList as item}
+								<tr data-dish-id="&{item.id}">
+									<form action="" method="">
+										<input type="hidden" name="id" value="&{item.id}"/>
+										<td>
+											&{item.name}
+											<input type="hidden" name="name" value="&{item.name}"/>
+										</td>
+										<td>
+											&{item.price}
+											<input type="hidden" name="price" value="&{item.price}"/>
+										</td>
+										<td>
+											&{item.quantity}
+											<input type="hidden" name="quantity" value="&{item.quantity}"/>
+										</td>
+										<td>
+											{@if list.auditStatus == 1 || list.auditStatus == 3}
+												<a href="javascript:;" class="label-info J_editBtn"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+												<a href="javascript:;" class="label-info J_delBtn"><i class="fa fa-times"></i>&nbsp;删除</a>
+											{@else}
+												<a href="javascript:;" class="label-info J_editBtn disabled"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+												<a href="javascript:;" class="label-info J_delBtn disabled"><i class="fa fa-times"></i>&nbsp;删除</a>
+											{@/if}
+										</td>
+									</form>
+								</tr>
+							{@/each}
+						{@/if}
+					</tbody>
+				</table>
+			</div>
+			{@/each}
+			<div class="col-sm-offset-5">
+				{@if list.auditStatus == 1 || list.auditStatus == 3}
+					<button class="btn btn-success margin-bottom-15 J_submit"><i class="fa fa-check"></i>&nbsp;确认提交</button>
+				{@else}
+					<button class="btn btn-success margin-bottom-15 J_submit" disabled="disabled"><i class="fa fa-check"></i>&nbsp;确认提交</button>
+				{@/if}
+			</div>
+		</script>
+		<script type="text/template" id="addDishTpl">
+			<form class="form-horizontal J_addForm" action="" method="">
+				{@if list != null}
+					<input type="hidden" name="id" value="&{list.id}" />
+				{@/if}
+				<div class="form-group">
+					<label class="col-sm-3 control-label"><span class="requires">*</span>菜品名称</label>
+					<div class="col-sm-9">
+						{@if list != null}
+							<input type="text" class="w400" data-valid-tip="请输入菜品名称|输入有误，请重新填写" data-valid-rule="notNull" name="name" value="&{list.name}">
+						{@else}
+							<input type="text" class="w400" data-valid-tip="请输入菜品名称|输入有误，请重新填写" data-valid-rule="notNull" name="name" value="">
+						{@/if}
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label"><span class="requires">*</span>价格</label>
+					<div class="col-sm-9">
+						{@if list != null}
+							<input type="text" class="w190" data-valid-tip="请输入菜品单价|输入有误，请重新填写" data-valid-rule="isFloat" name="price" value="&{list.price}">&nbsp;元
+						{@else}
+							<input type="text" class="w190" data-valid-tip="请输入菜品单价|输入有误，请重新填写" data-valid-rule="isFloat" name="price" value="">&nbsp;元
+						{@/if}
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label"><span class="requires">*</span>发售数量</label>
+					<div class="col-sm-9">
+						{@if list != null}
+							<input type="text" class="w190" data-valid-tip="请输入发售数量|输入有误，请重新填写" data-valid-rule="isPositiveIngeter" name="quantity" value="&{list.quantity}">
+						{@else}
+							<input type="text" class="w190" data-valid-tip="请输入发售数量|输入有误，请重新填写" data-valid-rule="isPositiveIngeter" name="quantity" value="">
+						{@/if}
+					</div>
+				</div>
+			</form>
+		</script>
+		<script type="text/javascript">
+			KISSY.ready(function(S){
+				S.use('page/dish-management/daily-dish-add-input', function(S){
+					PW.page.DishManagement.DailyDishAdd();
+				});
+			});
+		</script>
+	</body>
+</html>

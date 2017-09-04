@@ -1,0 +1,67 @@
+@import "../common/common-header";
+.container{
+	font-size: (26rem / $param);
+	margin-top: (94rem / $param);
+}
+.margin-top-15{
+	margin-top:(15rem / $param);
+}
+.order-info{
+	background: #fff;
+	padding: (20rem / $param) (20rem / $param) 0;
+	.info-item{
+		border-bottom: (1rem / $param) solid #a9a8af;
+		padding: (20rem / $param) 0;
+	}
+	.order-id{
+		font-size: (30rem / $param);
+		background: #38A2FA;
+		color: #fff;
+		padding-left: (10rem / $param);
+		padding-right: (10rem / $param);
+		margin-right: (20rem / $param);
+	}
+	.phone{
+		float: right;
+		color: #38A2FA;
+		font-size: (36rem / $param);
+	}
+	.time{
+		color: #84838a;
+	}
+	.status{
+		color: #ff8822;
+	}
+	.dish-item{
+		margin-top: (5rem / $param);
+		color: #84838a;
+	}
+	.dish-price{
+		float: right;
+	}
+	.price{
+		border-bottom: none;
+	}
+	.total-price{
+		color: #ff8822;
+		font-size: (36rem / $param);
+		float: right;
+	}
+}
+.oper-list{
+	margin-top: (30rem / $param);
+	text-align: center;
+	font-size: (36rem / $param);
+	button{
+		padding: (18rem / $param) (70rem / $param);
+		border: none;
+	}
+	.del-order{
+		background: #fff;
+		margin-right: (10rem / $param);
+	}
+	.confirm-order{
+		color: #fff;
+		background: #48c371;
+	}
+}

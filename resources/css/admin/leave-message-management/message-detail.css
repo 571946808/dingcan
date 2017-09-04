@@ -1,0 +1,65 @@
+.customer{
+	color: green;
+	font-size: 18px;
+	margin-right: 10px;
+	margin-left: 18px;
+}
+.business{
+	color: #38A2FA;
+	font-size: 18px;
+	margin-right: 18px;
+	margin-left: 10px;
+}
+.customer-text{
+	width: 55%;
+	padding: 18px;
+	background-color: #b5f7d8;
+	border-radius: 8px;
+	font-size: 15px;
+	line-height: 27px;
+}
+.business-text{
+	width: 55%;
+	padding: 18px;
+	background-color: #acd5f7;
+	border-radius: 8px;
+	font-size: 15px;
+	line-height: 27px;
+}
+.business-box{
+	width: 100%;
+	float: right;
+}
+.customer-box{
+	width: 100%;
+	float: left;
+}
+textarea{
+	height: 100px;
+	font-size:15px;
+	padding: 18px;
+	margin-left: 5px;
+	margin-top: 10px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+.leave-message{
+	width: 100px;
+	padding: 5px;
+	color: #fff;
+	background-color: #83b95b;
+	font-size:15px;
+}
+.end-message{
+	width: 100px;
+	padding: 5px;
+	color: #fff;
+	background-color: #4f8edc;
+	font-size:15px;
+}
+.message-button .btn{
+	color:#fff;
+}
+.inline .pw-tip{
+	font-size: 15px;
+}

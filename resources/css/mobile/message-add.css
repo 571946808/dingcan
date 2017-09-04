@@ -1,0 +1,88 @@
+html,
+body,
+.page {
+  background-color: #f0f0f0; }
+
+body {
+  overflow: hidden; }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+  width: 100%; }
+
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.25333rem;
+  width: 10rem;
+  bottom: 1.50667rem; }
+
+.hidden {
+  display: none; }
+
+/****************************sub-common-header********************/
+.header {
+  background-color: #38A2FA;
+  border-bottom: 0.02667rem solid #38A2FA;
+  position: fixed;
+  width: 10rem;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  /**have modified**/ }
+  .header h1 {
+    font-size: 0.42667rem;
+    color: #fff;
+    text-align: center;
+    height: 1.24rem;
+    line-height: 1.24rem; }
+  .header a {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem; }
+  .header .back-icon {
+    font-size: 0.42667rem;
+    color: #fff; }
+
+/****************************sub-common-header end********************/
+.container {
+  margin-top: 1.25333rem;
+  font-size: 0.48rem; }
+
+/*--------------------------message-add  start--------------------------------*/
+.message-add {
+  display: block;
+  width: 9.18667rem;
+  height: 4rem;
+  margin-top: 1.72rem;
+  border: 0.01333rem solid #c5c3c2;
+  padding: 0.4rem;
+  font-size: 0.45333rem; }
+
+.error-field {
+  color: #B94A48;
+  margin-left: 0.26667rem;
+  margin-top: 0.26667rem; }
+
+.confirm-submit {
+  width: 9.33333rem;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  margin: 0.46667rem 0.33333rem;
+  background: #38A2FA;
+  color: #fff;
+  border-radius: 0.13333rem;
+  border: none; }
+
+a {
+  display: block;
+  text-align: center; }
+
+.nickname {
+  margin-top: 2rem; }
+
+/*--------------------------message-add  end----------------------------------*/
+
+/*# sourceMappingURL=message-add.css.map */

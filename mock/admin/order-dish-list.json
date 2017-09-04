@@ -1,0 +1,8 @@
+{
+    "code": 0,
+    "list": [
+        {"dishName": "鱼香肉丝盖饭", "quantity":2},
+        {"dishName": "西红柿炒鸡蛋", "quantity":1}
+    ],
+    "errMsg":"错误提示信息"
+}
